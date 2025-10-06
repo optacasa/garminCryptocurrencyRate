@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<debugInfo>
+    <manifest filename="/Users/optacasa/Projects/git/ProBeautySpace/manifest.xml"/>
+    <pcToLineNum>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="1" lineNum="8" parent="globals/App" pc="268435457" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="2" lineNum="96" parent="globals/ProBeautySpaceView" pc="268435469" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/bin/gen/no-device/source/Rez.mcgen" id="3" lineNum="7" parent="globals/Rez" pc="268435481" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="4" lineNum="134" parent="globals/ProBeautySpaceDelegate" pc="268435501" symbol="&lt;init&gt;"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="6" lineNum="74" parent="globals/App" pc="268435513" symbol="processData"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="6" lineNum="76" parent="globals/App" pc="268435516" symbol="processData"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="6" lineNum="78" parent="globals/App" pc="268435534" symbol="processData"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="6" lineNum="79" parent="globals/App" pc="268435558" symbol="processData"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="6" lineNum="80" parent="globals/App" pc="268435564" symbol="processData"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="6" lineNum="81" parent="globals/App" pc="268435605" symbol="processData"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="6" lineNum="82" parent="globals/App" pc="268435646" symbol="processData"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="6" lineNum="83" parent="globals/App" pc="268435654" symbol="processData"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="6" lineNum="84" parent="globals/App" pc="268435672" symbol="processData"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="6" lineNum="86" parent="globals/App" pc="268435711" symbol="processData"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="6" lineNum="88" parent="globals/App" pc="268435724" symbol="processData"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="6" lineNum="89" parent="globals/App" pc="268435728" symbol="processData"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="6" lineNum="90" parent="globals/App" pc="268435740" symbol="processData"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="7" lineNum="25" parent="globals/App" pc="268435770" symbol="getInitialView"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="7" lineNum="26" parent="globals/App" pc="268435772" symbol="getInitialView"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="8" lineNum="14" parent="globals/App" pc="268435819" symbol="initialize"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="8" lineNum="15" parent="globals/App" pc="268435821" symbol="initialize"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="8" lineNum="16" parent="globals/App" pc="268435833" symbol="initialize"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="9" lineNum="29" parent="globals/App" pc="268435841" symbol="makeRequest"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="9" lineNum="30" parent="globals/App" pc="268435844" symbol="makeRequest"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="9" lineNum="31" parent="globals/App" pc="268435852" symbol="makeRequest"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="9" lineNum="32" parent="globals/App" pc="268435860" symbol="makeRequest"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="9" lineNum="35" parent="globals/App" pc="268435871" symbol="makeRequest"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="9" lineNum="38" parent="globals/App" pc="268435878" symbol="makeRequest"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="9" lineNum="40" parent="globals/App" pc="268435899" symbol="makeRequest"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="9" lineNum="45" parent="globals/App" pc="268435921" symbol="makeRequest"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="11" lineNum="53" parent="globals/App" pc="268435965" symbol="handleResponse"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="11" lineNum="54" parent="globals/App" pc="268435967" symbol="handleResponse"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="11" lineNum="56" parent="globals/App" pc="268435975" symbol="handleResponse"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="11" lineNum="57" parent="globals/App" pc="268435993" symbol="handleResponse"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="11" lineNum="58" parent="globals/App" pc="268436014" symbol="handleResponse"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="11" lineNum="60" parent="globals/App" pc="268436035" symbol="handleResponse"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="11" lineNum="61" parent="globals/App" pc="268436044" symbol="handleResponse"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="11" lineNum="62" parent="globals/App" pc="268436062" symbol="handleResponse"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="11" lineNum="63" parent="globals/App" pc="268436068" symbol="handleResponse"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="11" lineNum="65" parent="globals/App" pc="268436082" symbol="handleResponse"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="11" lineNum="68" parent="globals/App" pc="268436097" symbol="handleResponse"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="11" lineNum="71" parent="globals/App" pc="268436117" symbol="handleResponse"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="13" lineNum="97" parent="globals/ProBeautySpaceView" pc="268436129" symbol="initialize"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="13" lineNum="98" parent="globals/ProBeautySpaceView" pc="268436131" symbol="initialize"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="14" lineNum="104" parent="globals/ProBeautySpaceView" pc="268436144" symbol="onUpdate"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="14" lineNum="105" parent="globals/ProBeautySpaceView" pc="268436147" symbol="onUpdate"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="14" lineNum="106" parent="globals/ProBeautySpaceView" pc="268436159" symbol="onUpdate"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="14" lineNum="108" parent="globals/ProBeautySpaceView" pc="268436167" symbol="onUpdate"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="14" lineNum="109" parent="globals/ProBeautySpaceView" pc="268436179" symbol="onUpdate"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="14" lineNum="110" parent="globals/ProBeautySpaceView" pc="268436188" symbol="onUpdate"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="14" lineNum="111" parent="globals/ProBeautySpaceView" pc="268436197" symbol="onUpdate"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="14" lineNum="112" parent="globals/ProBeautySpaceView" pc="268436204" symbol="onUpdate"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="14" lineNum="114" parent="globals/ProBeautySpaceView" pc="268436211" symbol="onUpdate"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="14" lineNum="116" parent="globals/ProBeautySpaceView" pc="268436228" symbol="onUpdate"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="14" lineNum="117" parent="globals/ProBeautySpaceView" pc="268436237" symbol="onUpdate"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="14" lineNum="118" parent="globals/ProBeautySpaceView" pc="268436244" symbol="onUpdate"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="14" lineNum="119" parent="globals/ProBeautySpaceView" pc="268436265" symbol="onUpdate"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="14" lineNum="120" parent="globals/ProBeautySpaceView" pc="268436275" symbol="onUpdate"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="14" lineNum="121" parent="globals/ProBeautySpaceView" pc="268436292" symbol="onUpdate"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="14" lineNum="122" parent="globals/ProBeautySpaceView" pc="268436319" symbol="onUpdate"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="14" lineNum="123" parent="globals/ProBeautySpaceView" pc="268436336" symbol="onUpdate"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="14" lineNum="125" parent="globals/ProBeautySpaceView" pc="268436363" symbol="onUpdate"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="14" lineNum="126" parent="globals/ProBeautySpaceView" pc="268436394" symbol="onUpdate"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="14" lineNum="128" parent="globals/ProBeautySpaceView" pc="268436425" symbol="onUpdate"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="14" lineNum="129" parent="globals/ProBeautySpaceView" pc="268436448" symbol="onUpdate"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="15" lineNum="145" parent="globals/ProBeautySpaceDelegate" pc="268436472" symbol="onBack"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="15" lineNum="146" parent="globals/ProBeautySpaceDelegate" pc="268436474" symbol="onBack"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="15" lineNum="147" parent="globals/ProBeautySpaceDelegate" pc="268436488" symbol="onBack"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="16" lineNum="135" parent="globals/ProBeautySpaceDelegate" pc="268436490" symbol="initialize"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="16" lineNum="136" parent="globals/ProBeautySpaceDelegate" pc="268436492" symbol="initialize"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="17" lineNum="139" parent="globals/ProBeautySpaceDelegate" pc="268436505" symbol="onSelect"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="17" lineNum="140" parent="globals/ProBeautySpaceDelegate" pc="268436508" symbol="onSelect"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="17" lineNum="141" parent="globals/ProBeautySpaceDelegate" pc="268436520" symbol="onSelect"/>
+        <entry filename="/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" id="17" lineNum="142" parent="globals/ProBeautySpaceDelegate" pc="268436528" symbol="onSelect"/>
+    </pcToLineNum>
+    <symbolTable>
+        <entry id="8388639" module="true" symbol="Graphics"/>
+        <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
+        <entry id="6" object="true" symbol="ProBeautySpaceDelegate"/>
+        <entry field="true" id="8388611" module="true" symbol="Toybox"/>
+        <entry id="5" object="true" symbol="App"/>
+        <entry field="true" id="14" symbol="AppName"/>
+        <entry id="4" module="true" symbol="globals/Rez/Strings"/>
+        <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry id="8389081" method="true" symbol="onBack"/>
+        <entry id="2" module="true" symbol="globals/Rez"/>
+        <entry id="7" object="true" symbol="ProBeautySpaceView"/>
+        <entry id="8389124" method="true" symbol="onUpdate"/>
+        <entry id="8388771" module="true" object="true" symbol="Drawables"/>
+        <entry id="8389122" method="true" symbol="onLayout"/>
+        <entry field="true" id="11" symbol="price"/>
+        <entry id="10" method="true" symbol="makeRequest"/>
+        <entry id="8388637" module="true" symbol="Communications"/>
+        <entry id="12" method="true" symbol="processData"/>
+        <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
+        <entry id="8389844" symbol="responseType"/>
+        <entry id="8388786" method="true" symbol="method"/>
+        <entry id="8388644" module="true" symbol="System"/>
+        <entry id="8389619" method="true" symbol="onSelect"/>
+        <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry field="true" id="8388718" method="true" symbol="error"/>
+        <entry id="8388640" module="true" symbol="Lang"/>
+        <entry field="true" id="13" symbol="LauncherIcon"/>
+        <entry id="8388610" symbol="statics"/>
+        <entry id="8389350" module="true" symbol="globals"/>
+        <entry id="8388770" module="true" object="true" symbol="Strings"/>
+        <entry id="8388702" method="true" symbol="initialize"/>
+        <entry id="8389279" method="true" symbol="onStart"/>
+        <entry field="true" id="8388892" symbol="name"/>
+        <entry id="8389280" method="true" symbol="getInitialView"/>
+        <entry id="8389281" method="true" symbol="onStop"/>
+        <entry field="true" id="9" symbol="isLoading"/>
+        <entry id="8" method="true" symbol="handleResponse"/>
+        <entry id="8388635" module="true" symbol="Application"/>
+    </symbolTable>
+    <localVars>
+        <entry arg="true" endPc="268435769" name="data" stackId="1" startPc="268435513"/>
+        <entry endPc="268435707" name="item" stackId="2" startPc="268435558"/>
+        <entry endPc="268435767" name="e" stackId="3" startPc="268435724"/>
+        <entry endPc="268435963" name="url" stackId="1" startPc="268435844"/>
+        <entry endPc="268435963" name="options" stackId="2" startPc="268435844"/>
+        <entry arg="true" endPc="268436128" name="responseCode" stackId="1" startPc="268435965"/>
+        <entry arg="true" endPc="268436128" name="data" stackId="2" startPc="268435965"/>
+        <entry arg="true" endPc="268436471" name="dc" stackId="1" startPc="268436144"/>
+        <entry endPc="268436470" name="app" stackId="2" startPc="268436147"/>
+        <entry endPc="268436470" name="width" stackId="3" startPc="268436147"/>
+        <entry endPc="268436470" name="height" stackId="4" startPc="268436147"/>
+        <entry endPc="268436470" name="centerX" stackId="5" startPc="268436147"/>
+        <entry endPc="268436470" name="centerY" stackId="6" startPc="268436147"/>
+        <entry endPc="268436263" name="text" stackId="7" startPc="268436237"/>
+        <entry endPc="268436470" name="nameText" stackId="8" startPc="268436363"/>
+        <entry endPc="268436470" name="priceText" stackId="9" startPc="268436363"/>
+    </localVars>
+    <annotations>
+        <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
+        <annotationEntry annotation="initialized" class="Strings" module="globals/Rez" symbol="AppName"/>
+    </annotations>
+    <dataEntryOffsetMappings>
+        <dataEntry label="globals" offset="49" parentId="" symbolId="globals" type="module"/>
+        <dataEntry label="globals/App" offset="116" parentId="globals" symbolId="App" type="class"/>
+        <dataEntry label="globals/ProBeautySpaceView" offset="250" parentId="globals" symbolId="ProBeautySpaceView" type="class"/>
+        <dataEntry label="globals/Rez" offset="312" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/ProBeautySpaceDelegate" offset="356" parentId="globals" symbolId="ProBeautySpaceDelegate" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="418" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="453" parentId="Rez" symbolId="Strings" type="module"/>
+    </dataEntryOffsetMappings>
+    <functions>
+        <functionEntry accessMode="public" endPc="268435468" name="&lt;init&gt;" parent="App" startPc="268435457">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435480" name="&lt;init&gt;" parent="ProBeautySpaceView" startPc="268435469">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435500" name="&lt;init&gt;" parent="Rez" startPc="268435481">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435512" name="&lt;init&gt;" parent="ProBeautySpaceDelegate" startPc="268435501">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onStart" parent="App">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435769" name="processData" parent="App" startPc="268435513">
+            <param id="data"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435818" name="getInitialView" parent="App" startPc="268435770">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435840" name="initialize" parent="App" startPc="268435819">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435964" name="makeRequest" parent="App" startPc="268435841">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onStop" parent="App">
+            <param id="state"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436128" name="handleResponse" parent="App" startPc="268435965">
+            <param id="responseCode"/>
+            <param id="data"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onLayout" parent="ProBeautySpaceView">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436143" name="initialize" parent="ProBeautySpaceView" startPc="268436129">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436471" name="onUpdate" parent="ProBeautySpaceView" startPc="268436144">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436489" name="onBack" parent="ProBeautySpaceDelegate" startPc="268436472">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436504" name="initialize" parent="ProBeautySpaceDelegate" startPc="268436490">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436529" name="onSelect" parent="ProBeautySpaceDelegate" startPc="268436505">
+            <documentation/>
+        </functionEntry>
+    </functions>
+</debugInfo>

@@ -1,0 +1,1925 @@
+[ @file = "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc"; @line = 1; @symbol_usingdef<0> = [Toybox,1,6,12]; @symbol_usingdef<1> = [Application,1,13,24]; ]
+using Toybox.Application;
+[ @file = "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc"; @line = 2; @symbol_usingdef<0> = [Toybox,2,6,12]; @symbol_usingdef<1> = [Communications,2,13,27]; ]
+using Toybox.Communications;
+[ @file = "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc"; @line = 3; @symbol_usingdef<0> = [Toybox,3,6,12]; @symbol_usingdef<1> = [WatchUi,3,13,20]; ]
+using Toybox.WatchUi;
+[ @file = "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc"; @line = 4; @symbol_usingdef<0> = [Toybox,4,6,12]; @symbol_usingdef<1> = [Graphics,4,13,21]; ]
+using Toybox.Graphics;
+[ @file = "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc"; @line = 5; @symbol_usingdef<0> = [Toybox,5,6,12]; @symbol_usingdef<1> = [System,5,13,19]; ]
+using Toybox.System;
+[ @file = "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc"; @line = 6; @symbol_usingdef<0> = [Toybox,6,6,12]; @symbol_usingdef<1> = [Lang,6,13,17]; ]
+using Toybox.Lang;
+[ @file = "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc"; @line = 8; @symbol_classdef = [App,8,6,9]; @symbol_extends<0> = [Application,8,18,29]; @symbol_extends<1> = [AppBase,8,30,37]; ]
+class App extends Application.AppBase {
+    [ @file = "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc"; @line = 8; ]
+    <init> {
+    }
+    [ @file = "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc"; @line = 8; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc"; @line = 9; @position = 8; @symbol_vardef = [name,9,8,12]; ]
+    var name = "";
+    [ @file = "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc"; @line = 10; @position = 8; @symbol_vardef = [price,10,8,13]; ]
+    var price = "";
+    [ @file = "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc"; @line = 11; @position = 8; @symbol_vardef = [isLoading,11,8,17]; ]
+    var isLoading = false;
+    [ @file = "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc"; @line = 12; @position = 8; @symbol_vardef = [error,12,8,13]; ]
+    var error = null;
+    [ @file = "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc"; @line = 14; @symbol_functiondef = [initialize,14,13,23]; ]
+    function initialize() as Void {
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_14_26_18_4_start:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 15 8 ]
+        symbol [ System %tmp.1 15 8 14 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ println %tmp.2 15 15 22 ];
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "=== APP INITIALIZE ===";
+        invoke %tmp.1 %tmp.2(%tmp.3);
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 16 8 ]
+        symbol [ AppBase %tmp.5 16 8 15 ];
+        %tmp.5 = getv ? :AppBase;
+        symbol [ initialize %tmp.6 16 16 26 ];
+        %tmp.6 = getv function %tmp.5 :initialize;
+        invoke %tmp.5 %tmp.6();
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 17 8 ]
+        %tmp.7 = self;
+        symbol [ makeRequest %tmp.8 17 8 19 ];
+        %tmp.8 = getv function %tmp.7 :makeRequest;
+        invoke %tmp.7 %tmp.8();
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_14_26_18_4_stop:
+    }
+    [ @file = "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc"; @line = 20; @symbol_functiondef = [onStart,20,13,20]; @symbol_param<0> = [state,20,21,26]; ]
+    function onStart(state) {
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_20_28_22_4_start:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 21 8 ]
+        symbol [ System %tmp.1 21 8 14 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ println %tmp.2 21 15 22 ];
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "=== APP START ===";
+        invoke %tmp.1 %tmp.2(%tmp.3);
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_20_28_22_4_stop:
+    }
+    [ @file = "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc"; @line = 24; @symbol_functiondef = [onStop,24,13,19]; @symbol_param<0> = [state,24,20,25]; ]
+    function onStop(state) {
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_24_27_26_4_start:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 25 8 ]
+        symbol [ System %tmp.1 25 8 14 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ println %tmp.2 25 15 22 ];
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "=== APP STOP ===";
+        invoke %tmp.1 %tmp.2(%tmp.3);
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_24_27_26_4_stop:
+    }
+    [ @file = "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc"; @line = 28; @symbol_functiondef = [getInitialView,28,13,27]; ]
+    function getInitialView() {
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_28_30_31_4_start:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 29 8 ]
+        symbol [ System %tmp.1 29 8 14 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ println %tmp.2 29 15 22 ];
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "=== GET INITIAL VIEW ===";
+        invoke %tmp.1 %tmp.2(%tmp.3);
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 30 8 ]
+        %tmp.4 = newa 2;
+        symbol [ ProBeautySpaceView %tmp.8 30 20 38 ];
+        %tmp.8 = getv ? :ProBeautySpaceView;
+        %tmp.5 = newc %tmp.8 ();
+        %tmp.9 = dup %tmp.4;
+        %tmp.10 = aputv %tmp.9 0 %tmp.5;
+        symbol [ ProBeautySpaceDelegate %tmp.14 30 46 68 ];
+        %tmp.14 = getv ? :ProBeautySpaceDelegate;
+        %tmp.11 = newc %tmp.14 ();
+        %tmp.15 = dup %tmp.10;
+        %tmp.16 = aputv %tmp.15 1 %tmp.11;
+        ret %tmp.16;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_28_30_31_4_stop:
+    }
+    [ @file = "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc"; @line = 33; @symbol_functiondef = [makeRequest,33,13,24]; ]
+    function makeRequest() {
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_33_27_62_4_start:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 34 8 ]
+        symbol [ System %tmp.1 34 8 14 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ println %tmp.2 34 15 22 ];
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "🔄 MAKE REQUEST STARTED";
+        invoke %tmp.1 %tmp.2(%tmp.3);
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 35 8 ]
+        %tmp.4 = true;
+        symbol [ isLoading ? 35 8 17 ];
+        putv self :isLoading %tmp.4;
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 36 8 ]
+        %tmp.5 = null;
+        symbol [ error ? 36 8 13 ];
+        putv self :error %tmp.5;
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 37 8 ]
+        symbol [ WatchUi %tmp.6 37 8 15 ];
+        %tmp.6 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.7 37 16 29 ];
+        %tmp.7 = getv function %tmp.6 :requestUpdate;
+        invoke %tmp.6 %tmp.7();
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 39 8 ]
+        [ "_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_33_27_62_4_start" "_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_33_27_62_4_stop" ]
+        %url.1 = local;
+        symbol [ url %url.1 39 12 15 ];
+        %tmp.8 = "https://api.npoint.io/eae3eb3e944cf7a94bc5";
+        lputv %url.1 %tmp.8;
+        symbol [ url %url.1 39 12 15 ];
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 41 8 ]
+        symbol [ System %tmp.9 41 8 14 ];
+        %tmp.9 = getm $.Toybox.System;
+        symbol [ println %tmp.10 41 15 22 ];
+        %tmp.10 = getv function %tmp.9 :println;
+        %tmp.11 = "📡 URL: ";
+        %tmp.12 = lgetv %url.1;
+        symbol [ url %tmp.12 41 35 38 ];
+        %tmp.13 = add %tmp.11 %tmp.12;
+        invoke %tmp.9 %tmp.10(%tmp.13);
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 43 8 ]
+        [ "_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_33_27_62_4_start" "_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_33_27_62_4_stop" ]
+        %options.2 = local;
+        symbol [ options %options.2 43 12 19 ];
+        %tmp.14 = newd 2;
+        %tmp.16 = const :method;
+        symbol [ method %tmp.16 44 13 19 const ];
+        symbol [ Communications %tmp.17 44 23 37 ];
+        %tmp.17 = getm $.Toybox.Communications;
+        symbol [ HTTP_REQUEST_METHOD_GET %tmp.18 44 38 61 ];
+        %tmp.18 = getv %tmp.17 :HTTP_REQUEST_METHOD_GET;
+        %tmp.19 = dup %tmp.14;
+        %tmp.20 = aputv %tmp.19 %tmp.16 %tmp.18;
+        %tmp.22 = const :responseType;
+        symbol [ responseType %tmp.22 45 13 25 const ];
+        symbol [ Communications %tmp.23 45 29 43 ];
+        %tmp.23 = getm $.Toybox.Communications;
+        symbol [ HTTP_RESPONSE_CONTENT_TYPE_JSON %tmp.24 45 44 75 ];
+        %tmp.24 = getv %tmp.23 :HTTP_RESPONSE_CONTENT_TYPE_JSON;
+        %tmp.25 = dup %tmp.20;
+        %tmp.26 = aputv %tmp.25 %tmp.22 %tmp.24;
+        lputv %options.2 %tmp.26;
+        symbol [ options %options.2 43 12 19 ];
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 48 8 ]
+        try @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_48_8_61_8_beginTry @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_48_8_61_8_endTry @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_48_8_61_8_catch @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_48_8_61_8_finally;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_48_8_61_8_beginTry:
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_48_12_56_8_start:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 49 12 ]
+        symbol [ Communications %tmp.27 49 12 26 ];
+        %tmp.27 = getm $.Toybox.Communications;
+        symbol [ makeWebRequest %tmp.28 49 27 41 ];
+        %tmp.28 = getv function %tmp.27 :makeWebRequest;
+        %tmp.29 = lgetv %url.1;
+        symbol [ url %tmp.29 50 16 19 ];
+        %tmp.30 = newd 0;
+        %tmp.31 = lgetv %options.2;
+        symbol [ options %tmp.31 52 16 23 ];
+        symbol [ Method %tmp.35 53 20 26 ];
+        %tmp.35 = getv ? :Method;
+        %tmp.36 = self;
+        symbol [ self %tmp.36 53 27 31 ];
+        %tmp.38 = const :handleResponse;
+        symbol [ handleResponse %tmp.38 53 34 48 const ];
+        %tmp.32 = newc %tmp.35 (%tmp.36, %tmp.38);
+        invoke %tmp.27 %tmp.28(%tmp.29, %tmp.30, %tmp.31, %tmp.32);
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 55 12 ]
+        symbol [ System %tmp.39 55 12 18 ];
+        %tmp.39 = getm $.Toybox.System;
+        symbol [ println %tmp.40 55 19 26 ];
+        %tmp.40 = getv function %tmp.39 :println;
+        %tmp.41 = "✅ REQUEST SENT SUCCESSFULLY";
+        invoke %tmp.39 %tmp.40(%tmp.41);
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_48_12_56_8_stop:
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_48_8_61_8_endTry:
+        jsr @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_48_8_61_8_finally;
+        goto @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_48_8_61_8_end;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_48_8_61_8_catch:
+        %tmp.42 = exception;
+        push %tmp.42;
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 56 10 ]
+        [ "_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_48_8_61_8_catch" "_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_56_10_61_8_end" ]
+        %e.3 = local;
+        symbol [ e %e.3 56 17 18 ];
+        %tmp.43 = dup %tmp.42;
+        lputv %e.3 %tmp.43;
+        symbol [ e %e.3 56 17 18 ];
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_56_20_61_8_start:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 57 12 ]
+        symbol [ System %tmp.44 57 12 18 ];
+        %tmp.44 = getm $.Toybox.System;
+        symbol [ println %tmp.45 57 19 26 ];
+        %tmp.45 = getv function %tmp.44 :println;
+        %tmp.46 = "❌ EXCEPTION IN MAKE REQUEST: ";
+        %tmp.47 = lgetv %e.3;
+        symbol [ e %tmp.47 57 61 62 ];
+        symbol [ getErrorMessage %tmp.48 57 63 78 ];
+        %tmp.48 = getv function %tmp.47 :getErrorMessage;
+        %tmp.49 = invoke %tmp.47 %tmp.48();
+        %tmp.50 = add %tmp.46 %tmp.49;
+        invoke %tmp.44 %tmp.45(%tmp.50);
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 58 12 ]
+        %tmp.51 = "Ошибка отправки: ";
+        %tmp.52 = lgetv %e.3;
+        symbol [ e %tmp.52 58 42 43 ];
+        symbol [ getErrorMessage %tmp.53 58 44 59 ];
+        %tmp.53 = getv function %tmp.52 :getErrorMessage;
+        %tmp.54 = invoke %tmp.52 %tmp.53();
+        %tmp.55 = add %tmp.51 %tmp.54;
+        symbol [ error ? 58 12 17 ];
+        putv self :error %tmp.55;
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 59 12 ]
+        %tmp.56 = false;
+        symbol [ isLoading ? 59 12 21 ];
+        putv self :isLoading %tmp.56;
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 60 12 ]
+        symbol [ WatchUi %tmp.57 60 12 19 ];
+        %tmp.57 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.58 60 20 33 ];
+        %tmp.58 = getv function %tmp.57 :requestUpdate;
+        invoke %tmp.57 %tmp.58();
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_56_20_61_8_stop:
+        jsr @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_48_8_61_8_finally;
+        pop;
+        goto @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_48_8_61_8_end;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_56_10_61_8_end:
+        try @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_48_8_61_8_catch @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_56_10_61_8_end @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_56_10_61_8_end @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_48_8_61_8_finally;
+        jsr @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_48_8_61_8_finally;
+        throw %tmp.42;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_48_8_61_8_finally:
+        jsrret;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_48_8_61_8_end:
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_33_27_62_4_stop:
+    }
+    [ @file = "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc"; @line = 64; @symbol_functiondef = [handleResponse,64,13,27]; @symbol_param<0> = [responseCode,64,28,40]; @symbol_param<1> = [data,64,42,46]; ]
+    function handleResponse(responseCode, data) {
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_64_48_101_4_start:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 65 8 ]
+        symbol [ System %tmp.1 65 8 14 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ println %tmp.2 65 15 22 ];
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "=== HANDLE RESPONSE ===";
+        invoke %tmp.1 %tmp.2(%tmp.3);
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 66 8 ]
+        symbol [ System %tmp.4 66 8 14 ];
+        %tmp.4 = getm $.Toybox.System;
+        symbol [ println %tmp.5 66 15 22 ];
+        %tmp.5 = getv function %tmp.4 :println;
+        %tmp.6 = "📡 RESPONSE CODE: ";
+        %tmp.7 = lgetv %responseCode;
+        symbol [ responseCode %tmp.7 66 45 57 ];
+        %tmp.8 = add %tmp.6 %tmp.7;
+        invoke %tmp.4 %tmp.5(%tmp.8);
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 67 8 ]
+        symbol [ System %tmp.9 67 8 14 ];
+        %tmp.9 = getm $.Toybox.System;
+        symbol [ println %tmp.10 67 15 22 ];
+        %tmp.10 = getv function %tmp.9 :println;
+        %tmp.11 = "📦 DATA TYPE: ";
+        %tmp.12 = lgetv %data;
+        symbol [ data %tmp.12 67 41 45 ];
+        %tmp.13 = add %tmp.11 %tmp.12;
+        invoke %tmp.9 %tmp.10(%tmp.13);
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 68 8 ]
+        symbol [ System %tmp.14 68 8 14 ];
+        %tmp.14 = getm $.Toybox.System;
+        symbol [ println %tmp.15 68 15 22 ];
+        %tmp.15 = getv function %tmp.14 :println;
+        %tmp.16 = "📦 DATA: ";
+        %tmp.17 = lgetv %data;
+        symbol [ data %tmp.17 68 36 40 ];
+        %tmp.18 = add %tmp.16 %tmp.17;
+        invoke %tmp.14 %tmp.15(%tmp.18);
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 70 8 ]
+        %tmp.19 = false;
+        symbol [ isLoading ? 70 8 17 ];
+        putv self :isLoading %tmp.19;
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 72 8 ]
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_72_8_96_8_if_stmt:
+        %tmp.20 = lgetv %responseCode;
+        symbol [ responseCode %tmp.20 72 12 24 ];
+        %tmp.21 = 200;
+        %tmp.22 = eq %tmp.20 %tmp.21;
+        bf %tmp.22 @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_72_8_96_8_if_false;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_72_8_96_8_if_true:
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_72_33_81_8_start:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 73 12 ]
+        symbol [ System %tmp.23 73 12 18 ];
+        %tmp.23 = getm $.Toybox.System;
+        symbol [ println %tmp.24 73 19 26 ];
+        %tmp.24 = getv function %tmp.23 :println;
+        %tmp.25 = "✅ HTTP 200 - SUCCESS";
+        invoke %tmp.23 %tmp.24(%tmp.25);
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 74 12 ]
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_74_12_80_12_if_stmt:
+        %tmp.26 = lgetv %data;
+        symbol [ data %tmp.26 74 16 20 ];
+        %tmp.27 = null;
+        %tmp.28 = ne %tmp.26 %tmp.27;
+        bf %tmp.28 @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_74_12_80_12_if_else_false;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_74_12_80_12_if_true:
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_74_30_77_12_start:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 75 16 ]
+        symbol [ System %tmp.29 75 16 22 ];
+        %tmp.29 = getm $.Toybox.System;
+        symbol [ println %tmp.30 75 23 30 ];
+        %tmp.30 = getv function %tmp.29 :println;
+        %tmp.31 = "🔄 PROCESSING DATA...";
+        invoke %tmp.29 %tmp.30(%tmp.31);
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 76 16 ]
+        %tmp.32 = self;
+        symbol [ processData %tmp.33 76 16 27 ];
+        %tmp.33 = getv function %tmp.32 :processData;
+        %tmp.34 = lgetv %data;
+        symbol [ data %tmp.34 76 28 32 ];
+        %tmp.35 = as %tmp.34 { (!Null) };
+        invoke %tmp.32 %tmp.33(%tmp.35);
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_74_30_77_12_stop:
+        goto @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_74_12_80_12_if_end;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_74_12_80_12_if_else_false:
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_77_19_80_12_start:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 78 16 ]
+        %tmp.36 = "Нет данных";
+        symbol [ error ? 78 16 21 ];
+        putv self :error %tmp.36;
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 79 16 ]
+        symbol [ System %tmp.37 79 16 22 ];
+        %tmp.37 = getm $.Toybox.System;
+        symbol [ println %tmp.38 79 23 30 ];
+        %tmp.38 = getv function %tmp.37 :println;
+        %tmp.39 = "❌ DATA IS NULL";
+        invoke %tmp.37 %tmp.38(%tmp.39);
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_77_19_80_12_stop:
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_74_12_80_12_if_end:
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_72_33_81_8_stop:
+        goto @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_72_8_96_8_if_end;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_72_8_96_8_if_false:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 81 15 ]
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_81_15_96_8_if_stmt:
+        %tmp.40 = lgetv %responseCode;
+        symbol [ responseCode %tmp.40 81 19 31 ];
+        %tmp.41 = 404;
+        %tmp.42 = eq %tmp.40 %tmp.41;
+        bf %tmp.42 @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_81_15_96_8_if_false;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_81_15_96_8_if_true:
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_81_40_84_8_start:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 82 12 ]
+        %tmp.43 = "Ошибка 404 - Не найдено";
+        symbol [ error ? 82 12 17 ];
+        putv self :error %tmp.43;
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 83 12 ]
+        symbol [ System %tmp.44 83 12 18 ];
+        %tmp.44 = getm $.Toybox.System;
+        symbol [ println %tmp.45 83 19 26 ];
+        %tmp.45 = getv function %tmp.44 :println;
+        %tmp.46 = "❌ HTTP 404 - NOT FOUND";
+        invoke %tmp.44 %tmp.45(%tmp.46);
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_81_40_84_8_stop:
+        goto @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_81_15_96_8_if_end;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_81_15_96_8_if_false:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 84 15 ]
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_84_15_96_8_if_stmt:
+        %tmp.47 = lgetv %responseCode;
+        symbol [ responseCode %tmp.47 84 19 31 ];
+        %tmp.48 = 500;
+        %tmp.49 = eq %tmp.47 %tmp.48;
+        bf %tmp.49 @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_84_15_96_8_if_false;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_84_15_96_8_if_true:
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_84_40_87_8_start:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 85 12 ]
+        %tmp.50 = "Ошибка 500 - Сервер";
+        symbol [ error ? 85 12 17 ];
+        putv self :error %tmp.50;
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 86 12 ]
+        symbol [ System %tmp.51 86 12 18 ];
+        %tmp.51 = getm $.Toybox.System;
+        symbol [ println %tmp.52 86 19 26 ];
+        %tmp.52 = getv function %tmp.51 :println;
+        %tmp.53 = "❌ HTTP 500 - SERVER ERROR";
+        invoke %tmp.51 %tmp.52(%tmp.53);
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_84_40_87_8_stop:
+        goto @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_84_15_96_8_if_end;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_84_15_96_8_if_false:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 87 15 ]
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_87_15_96_8_if_stmt:
+        %tmp.54 = lgetv %responseCode;
+        symbol [ responseCode %tmp.54 87 19 31 ];
+        %tmp.55 = -1000;
+        %tmp.56 = eq %tmp.54 %tmp.55;
+        bf %tmp.56 @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_87_15_96_8_if_false;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_87_15_96_8_if_true:
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_87_42_90_8_start:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 88 12 ]
+        %tmp.57 = "Нет сети";
+        symbol [ error ? 88 12 17 ];
+        putv self :error %tmp.57;
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 89 12 ]
+        symbol [ System %tmp.58 89 12 18 ];
+        %tmp.58 = getm $.Toybox.System;
+        symbol [ println %tmp.59 89 19 26 ];
+        %tmp.59 = getv function %tmp.58 :println;
+        %tmp.60 = "❌ ERROR -1000: NO NETWORK";
+        invoke %tmp.58 %tmp.59(%tmp.60);
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_87_42_90_8_stop:
+        goto @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_87_15_96_8_if_end;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_87_15_96_8_if_false:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 90 15 ]
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_90_15_96_8_if_stmt:
+        %tmp.61 = lgetv %responseCode;
+        symbol [ responseCode %tmp.61 90 19 31 ];
+        %tmp.62 = -400;
+        %tmp.63 = eq %tmp.61 %tmp.62;
+        bf %tmp.63 @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_90_15_96_8_if_else_false;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_90_15_96_8_if_true:
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_90_41_93_8_start:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 91 12 ]
+        %tmp.64 = "Ошибка запроса";
+        symbol [ error ? 91 12 17 ];
+        putv self :error %tmp.64;
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 92 12 ]
+        symbol [ System %tmp.65 92 12 18 ];
+        %tmp.65 = getm $.Toybox.System;
+        symbol [ println %tmp.66 92 19 26 ];
+        %tmp.66 = getv function %tmp.65 :println;
+        %tmp.67 = "❌ ERROR -400: BAD REQUEST";
+        invoke %tmp.65 %tmp.66(%tmp.67);
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_90_41_93_8_stop:
+        goto @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_90_15_96_8_if_end;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_90_15_96_8_if_else_false:
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_93_15_96_8_start:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 94 12 ]
+        %tmp.68 = "Ошибка: ";
+        %tmp.69 = lgetv %responseCode;
+        symbol [ responseCode %tmp.69 94 33 45 ];
+        symbol [ toString %tmp.70 94 46 54 ];
+        %tmp.70 = getv function %tmp.69 :toString;
+        %tmp.71 = invoke %tmp.69 %tmp.70();
+        %tmp.72 = add %tmp.68 %tmp.71;
+        symbol [ error ? 94 12 17 ];
+        putv self :error %tmp.72;
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 95 12 ]
+        symbol [ System %tmp.73 95 12 18 ];
+        %tmp.73 = getm $.Toybox.System;
+        symbol [ println %tmp.74 95 19 26 ];
+        %tmp.74 = getv function %tmp.73 :println;
+        %tmp.75 = "❌ UNKNOWN ERROR CODE: ";
+        %tmp.76 = lgetv %responseCode;
+        symbol [ responseCode %tmp.76 95 54 66 ];
+        %tmp.77 = add %tmp.75 %tmp.76;
+        invoke %tmp.73 %tmp.74(%tmp.77);
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_93_15_96_8_stop:
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_90_15_96_8_if_end:
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_87_15_96_8_if_end:
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_84_15_96_8_if_end:
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_81_15_96_8_if_end:
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_72_8_96_8_if_end:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 98 8 ]
+        symbol [ System %tmp.78 98 8 14 ];
+        %tmp.78 = getm $.Toybox.System;
+        symbol [ println %tmp.79 98 15 22 ];
+        %tmp.79 = getv function %tmp.78 :println;
+        %tmp.80 = "🔄 UPDATING UI...";
+        invoke %tmp.78 %tmp.79(%tmp.80);
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 99 8 ]
+        symbol [ WatchUi %tmp.81 99 8 15 ];
+        %tmp.81 = getm $.Toybox.WatchUi;
+        symbol [ requestUpdate %tmp.82 99 16 29 ];
+        %tmp.82 = getv function %tmp.81 :requestUpdate;
+        invoke %tmp.81 %tmp.82();
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 100 8 ]
+        symbol [ System %tmp.83 100 8 14 ];
+        %tmp.83 = getm $.Toybox.System;
+        symbol [ println %tmp.84 100 15 22 ];
+        %tmp.84 = getv function %tmp.83 :println;
+        %tmp.85 = "=== END HANDLE RESPONSE ===";
+        invoke %tmp.83 %tmp.84(%tmp.85);
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_64_48_101_4_stop:
+    }
+    [ @file = "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc"; @line = 103; @symbol_functiondef = [processData,103,13,24]; @symbol_param<0> = [data,103,25,29]; ]
+    function processData(data) {
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_103_31_153_4_start:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 104 8 ]
+        symbol [ System %tmp.1 104 8 14 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ println %tmp.2 104 15 22 ];
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "=== PROCESS DATA ===";
+        invoke %tmp.1 %tmp.2(%tmp.3);
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 105 8 ]
+        try @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_105_8_151_8_beginTry @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_105_8_151_8_endTry @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_105_8_151_8_catch @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_105_8_151_8_finally;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_105_8_151_8_beginTry:
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_105_12_148_8_start:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 106 12 ]
+        symbol [ System %tmp.4 106 12 18 ];
+        %tmp.4 = getm $.Toybox.System;
+        symbol [ println %tmp.5 106 19 26 ];
+        %tmp.5 = getv function %tmp.4 :println;
+        %tmp.6 = "🔧 DATA CLASS: ";
+        %tmp.7 = lgetv %data;
+        symbol [ data %tmp.7 106 46 50 ];
+        %tmp.8 = add %tmp.6 %tmp.7;
+        invoke %tmp.4 %tmp.5(%tmp.8);
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 108 12 ]
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_108_12_147_12_if_stmt:
+        %tmp.9 = lgetv %data;
+        symbol [ data %tmp.9 108 16 20 ];
+        symbol [ Array %tmp.11 108 32 37 ];
+        %tmp.11 = getv ? :Array;
+        %tmp.12 = isa %tmp.9 %tmp.11;
+        bf %tmp.12 @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_108_12_147_12_if_false;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_108_12_147_12_if_true:
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_108_39_129_12_start:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 109 16 ]
+        symbol [ System %tmp.13 109 16 22 ];
+        %tmp.13 = getm $.Toybox.System;
+        symbol [ println %tmp.14 109 23 30 ];
+        %tmp.14 = getv function %tmp.13 :println;
+        %tmp.15 = "📋 DATA IS ARRAY, SIZE: ";
+        %tmp.16 = lgetv %data;
+        symbol [ data %tmp.16 109 59 63 ];
+        %tmp.17 = as %tmp.16 { (Array) };
+        symbol [ size %tmp.18 109 64 68 ];
+        %tmp.18 = getv function %tmp.17 :size;
+        %tmp.19 = invoke %tmp.17 %tmp.18();
+        %tmp.20 = add %tmp.15 %tmp.19;
+        invoke %tmp.13 %tmp.14(%tmp.20);
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 110 16 ]
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_110_16_128_16_if_stmt:
+        %tmp.21 = lgetv %data;
+        symbol [ data %tmp.21 110 20 24 ];
+        %tmp.22 = as %tmp.21 { (Array) };
+        symbol [ size %tmp.23 110 25 29 ];
+        %tmp.23 = getv function %tmp.22 :size;
+        %tmp.24 = invoke %tmp.22 %tmp.23();
+        %tmp.25 = 0;
+        %tmp.26 = gt %tmp.24 %tmp.25;
+        bf %tmp.26 @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_110_16_128_16_if_else_false;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_110_16_128_16_if_true:
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_110_37_125_16_start:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 111 20 ]
+        [ "_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_110_37_125_16_start" "_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_110_37_125_16_stop" ]
+        %item.1 = local;
+        symbol [ item %item.1 111 24 28 ];
+        %tmp.27 = lgetv %data;
+        symbol [ data %tmp.27 111 31 35 ];
+        %tmp.28 = as %tmp.27 { (Array) };
+        %tmp.29 = 0;
+        %tmp.30 = agetv %tmp.28 %tmp.29;
+        lputv %item.1 %tmp.30;
+        symbol [ item %item.1 111 24 28 ];
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 112 20 ]
+        symbol [ System %tmp.31 112 20 26 ];
+        %tmp.31 = getm $.Toybox.System;
+        symbol [ println %tmp.32 112 27 34 ];
+        %tmp.32 = getv function %tmp.31 :println;
+        %tmp.33 = "📝 FIRST ITEM: ";
+        %tmp.34 = lgetv %item.1;
+        symbol [ item %tmp.34 112 54 58 ];
+        %tmp.35 = add %tmp.33 %tmp.34;
+        invoke %tmp.31 %tmp.32(%tmp.35);
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 114 20 ]
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_114_20_124_20_if_stmt:
+        %tmp.36 = lgetv %item.1;
+        symbol [ item %tmp.36 114 24 28 ];
+        symbol [ Dictionary %tmp.38 114 40 50 ];
+        %tmp.38 = getv ? :Dictionary;
+        %tmp.39 = isa %tmp.36 %tmp.38;
+        bf %tmp.39 @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_114_20_124_20_if_else_false;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_114_20_124_20_if_true:
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_114_52_121_20_start:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 115 24 ]
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_115_31_115_80_begin:
+        %tmp.40 = lgetv %item.1;
+        symbol [ item %tmp.40 115 31 35 ];
+        %tmp.41 = as %tmp.40 { (Dictionary) };
+        %tmp.42 = "name";
+        %tmp.43 = agetv %tmp.41 %tmp.42;
+        %tmp.44 = null;
+        %tmp.45 = ne %tmp.43 %tmp.44;
+        bf %tmp.45 @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_115_31_115_80_else_false;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_115_31_115_80_true:
+        %tmp.46 = lgetv %item.1;
+        symbol [ item %tmp.46 115 54 58 ];
+        %tmp.47 = as %tmp.46 { (Dictionary) };
+        %tmp.48 = "name";
+        %tmp.49 = agetv %tmp.47 %tmp.48;
+        symbol [ toString %tmp.50 115 67 75 ];
+        %tmp.50 = getv function %tmp.49 :toString;
+        %tmp.51 = invoke %tmp.49 %tmp.50();
+        push %tmp.51;
+        goto @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_115_31_115_80_end;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_115_31_115_80_else_false:
+        %tmp.52 = "";
+        push %tmp.52;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_115_31_115_80_end:
+        %tmp.53 = phi [%tmp.45 @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_115_31_115_80_begin] [%tmp.51 @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_115_31_115_80_true] [%tmp.52 @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_115_31_115_80_else_false] [%tmp.53 @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_115_31_115_80_end];
+        symbol [ name ? 115 24 28 ];
+        putv self :name %tmp.53;
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 116 24 ]
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_116_32_116_83_begin:
+        %tmp.54 = lgetv %item.1;
+        symbol [ item %tmp.54 116 32 36 ];
+        %tmp.55 = as %tmp.54 { (Dictionary) };
+        %tmp.56 = "price";
+        %tmp.57 = agetv %tmp.55 %tmp.56;
+        %tmp.58 = null;
+        %tmp.59 = ne %tmp.57 %tmp.58;
+        bf %tmp.59 @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_116_32_116_83_else_false;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_116_32_116_83_true:
+        %tmp.60 = lgetv %item.1;
+        symbol [ item %tmp.60 116 56 60 ];
+        %tmp.61 = as %tmp.60 { (Dictionary) };
+        %tmp.62 = "price";
+        %tmp.63 = agetv %tmp.61 %tmp.62;
+        symbol [ toString %tmp.64 116 70 78 ];
+        %tmp.64 = getv function %tmp.63 :toString;
+        %tmp.65 = invoke %tmp.63 %tmp.64();
+        push %tmp.65;
+        goto @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_116_32_116_83_end;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_116_32_116_83_else_false:
+        %tmp.66 = "";
+        push %tmp.66;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_116_32_116_83_end:
+        %tmp.67 = phi [%tmp.59 @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_116_32_116_83_begin] [%tmp.65 @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_116_32_116_83_true] [%tmp.66 @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_116_32_116_83_else_false] [%tmp.67 @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_116_32_116_83_end];
+        symbol [ price ? 116 24 29 ];
+        putv self :price %tmp.67;
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 117 24 ]
+        %tmp.68 = null;
+        symbol [ error ? 117 24 29 ];
+        putv self :error %tmp.68;
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 118 24 ]
+        symbol [ System %tmp.69 118 24 30 ];
+        %tmp.69 = getm $.Toybox.System;
+        symbol [ println %tmp.70 118 31 38 ];
+        %tmp.70 = getv function %tmp.69 :println;
+        %tmp.71 = "✅ DATA PARSED SUCCESSFULLY";
+        invoke %tmp.69 %tmp.70(%tmp.71);
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 119 24 ]
+        symbol [ System %tmp.72 119 24 30 ];
+        %tmp.72 = getm $.Toybox.System;
+        symbol [ println %tmp.73 119 31 38 ];
+        %tmp.73 = getv function %tmp.72 :println;
+        %tmp.74 = "🏷️ NAME: ";
+        symbol [ name %tmp.76 119 53 57 ];
+        %tmp.76 = getv ? :name;
+        %tmp.77 = add %tmp.74 %tmp.76;
+        invoke %tmp.72 %tmp.73(%tmp.77);
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 120 24 ]
+        symbol [ System %tmp.78 120 24 30 ];
+        %tmp.78 = getm $.Toybox.System;
+        symbol [ println %tmp.79 120 31 38 ];
+        %tmp.79 = getv function %tmp.78 :println;
+        %tmp.80 = "💰 PRICE: ";
+        symbol [ price %tmp.82 120 53 58 ];
+        %tmp.82 = getv ? :price;
+        %tmp.83 = add %tmp.80 %tmp.82;
+        invoke %tmp.78 %tmp.79(%tmp.83);
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_114_52_121_20_stop:
+        goto @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_114_20_124_20_if_end;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_114_20_124_20_if_else_false:
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_121_27_124_20_start:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 122 24 ]
+        %tmp.84 = "Неверный формат элемента";
+        symbol [ error ? 122 24 29 ];
+        putv self :error %tmp.84;
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 123 24 ]
+        symbol [ System %tmp.85 123 24 30 ];
+        %tmp.85 = getm $.Toybox.System;
+        symbol [ println %tmp.86 123 31 38 ];
+        %tmp.86 = getv function %tmp.85 :println;
+        %tmp.87 = "❌ ITEM IS NOT DICTIONARY";
+        invoke %tmp.85 %tmp.86(%tmp.87);
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_121_27_124_20_stop:
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_114_20_124_20_if_end:
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_110_37_125_16_stop:
+        goto @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_110_16_128_16_if_end;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_110_16_128_16_if_else_false:
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_125_23_128_16_start:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 126 20 ]
+        %tmp.88 = "Пустой массив";
+        symbol [ error ? 126 20 25 ];
+        putv self :error %tmp.88;
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 127 20 ]
+        symbol [ System %tmp.89 127 20 26 ];
+        %tmp.89 = getm $.Toybox.System;
+        symbol [ println %tmp.90 127 27 34 ];
+        %tmp.90 = getv function %tmp.89 :println;
+        %tmp.91 = "❌ ARRAY IS EMPTY";
+        invoke %tmp.89 %tmp.90(%tmp.91);
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_125_23_128_16_stop:
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_110_16_128_16_if_end:
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_108_39_129_12_stop:
+        goto @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_108_12_147_12_if_end;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_108_12_147_12_if_false:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 129 19 ]
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_129_19_147_12_if_stmt:
+        %tmp.92 = lgetv %data;
+        symbol [ data %tmp.92 129 23 27 ];
+        %tmp.93 = as %tmp.92 { (!Array) };
+        symbol [ Dictionary %tmp.95 129 39 49 ];
+        %tmp.95 = getv ? :Dictionary;
+        %tmp.96 = isa %tmp.93 %tmp.95;
+        bf %tmp.96 @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_129_19_147_12_if_else_false;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_129_19_147_12_if_true:
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_129_51_144_12_start:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 130 16 ]
+        symbol [ System %tmp.97 130 16 22 ];
+        %tmp.97 = getm $.Toybox.System;
+        symbol [ println %tmp.98 130 23 30 ];
+        %tmp.98 = getv function %tmp.97 :println;
+        %tmp.99 = "📋 DATA IS DICTIONARY";
+        invoke %tmp.97 %tmp.98(%tmp.99);
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 132 16 ]
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_132_16_139_16_if_stmt:
+        %tmp.100 = lgetv %data;
+        symbol [ data %tmp.100 132 20 24 ];
+        %tmp.101 = as %tmp.100 { (!Array) && (Dictionary) };
+        %tmp.102 = "name";
+        %tmp.103 = agetv %tmp.101 %tmp.102;
+        %tmp.104 = null;
+        %tmp.105 = ne %tmp.103 %tmp.104;
+        bf %tmp.105 @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_132_16_139_16_if_else_false;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_132_16_139_16_if_true:
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_132_42_136_16_start:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 133 20 ]
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_133_27_133_76_begin:
+        %tmp.106 = lgetv %data;
+        symbol [ data %tmp.106 133 27 31 ];
+        %tmp.107 = as %tmp.106 { (!Array) && (Dictionary) };
+        %tmp.108 = "name";
+        %tmp.109 = agetv %tmp.107 %tmp.108;
+        %tmp.110 = null;
+        %tmp.111 = ne %tmp.109 %tmp.110;
+        bf %tmp.111 @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_133_27_133_76_else_false;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_133_27_133_76_true:
+        %tmp.112 = lgetv %data;
+        symbol [ data %tmp.112 133 50 54 ];
+        %tmp.113 = as %tmp.112 { (!Array) && (Dictionary) };
+        %tmp.114 = "name";
+        %tmp.115 = agetv %tmp.113 %tmp.114;
+        symbol [ toString %tmp.116 133 63 71 ];
+        %tmp.116 = getv function %tmp.115 :toString;
+        %tmp.117 = invoke %tmp.115 %tmp.116();
+        push %tmp.117;
+        goto @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_133_27_133_76_end;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_133_27_133_76_else_false:
+        %tmp.118 = "";
+        push %tmp.118;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_133_27_133_76_end:
+        %tmp.119 = phi [%tmp.111 @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_133_27_133_76_begin] [%tmp.117 @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_133_27_133_76_true] [%tmp.118 @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_133_27_133_76_else_false] [%tmp.119 @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_133_27_133_76_end];
+        symbol [ name ? 133 20 24 ];
+        putv self :name %tmp.119;
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 134 20 ]
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_134_28_134_79_begin:
+        %tmp.120 = lgetv %data;
+        symbol [ data %tmp.120 134 28 32 ];
+        %tmp.121 = as %tmp.120 { (!Array) && (Dictionary) };
+        %tmp.122 = "price";
+        %tmp.123 = agetv %tmp.121 %tmp.122;
+        %tmp.124 = null;
+        %tmp.125 = ne %tmp.123 %tmp.124;
+        bf %tmp.125 @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_134_28_134_79_else_false;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_134_28_134_79_true:
+        %tmp.126 = lgetv %data;
+        symbol [ data %tmp.126 134 52 56 ];
+        %tmp.127 = as %tmp.126 { (!Array) && (Dictionary) };
+        %tmp.128 = "price";
+        %tmp.129 = agetv %tmp.127 %tmp.128;
+        symbol [ toString %tmp.130 134 66 74 ];
+        %tmp.130 = getv function %tmp.129 :toString;
+        %tmp.131 = invoke %tmp.129 %tmp.130();
+        push %tmp.131;
+        goto @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_134_28_134_79_end;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_134_28_134_79_else_false:
+        %tmp.132 = "";
+        push %tmp.132;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_134_28_134_79_end:
+        %tmp.133 = phi [%tmp.125 @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_134_28_134_79_begin] [%tmp.131 @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_134_28_134_79_true] [%tmp.132 @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_134_28_134_79_else_false] [%tmp.133 @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_134_28_134_79_end];
+        symbol [ price ? 134 20 25 ];
+        putv self :price %tmp.133;
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 135 20 ]
+        symbol [ System %tmp.134 135 20 26 ];
+        %tmp.134 = getm $.Toybox.System;
+        symbol [ println %tmp.135 135 27 34 ];
+        %tmp.135 = getv function %tmp.134 :println;
+        %tmp.136 = "✅ YOUR API DATA PARSED";
+        invoke %tmp.134 %tmp.135(%tmp.136);
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_132_42_136_16_stop:
+        goto @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_132_16_139_16_if_end;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_132_16_139_16_if_else_false:
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_136_23_139_16_start:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 137 20 ]
+        %tmp.137 = "Неверный формат данных";
+        symbol [ error ? 137 20 25 ];
+        putv self :error %tmp.137;
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 138 20 ]
+        symbol [ System %tmp.138 138 20 26 ];
+        %tmp.138 = getm $.Toybox.System;
+        symbol [ println %tmp.139 138 27 34 ];
+        %tmp.139 = getv function %tmp.138 :println;
+        %tmp.140 = "❌ INVALID DATA FORMAT";
+        invoke %tmp.138 %tmp.139(%tmp.140);
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_136_23_139_16_stop:
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_132_16_139_16_if_end:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 141 16 ]
+        %tmp.141 = null;
+        symbol [ error ? 141 16 21 ];
+        putv self :error %tmp.141;
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 142 16 ]
+        symbol [ System %tmp.142 142 16 22 ];
+        %tmp.142 = getm $.Toybox.System;
+        symbol [ println %tmp.143 142 23 30 ];
+        %tmp.143 = getv function %tmp.142 :println;
+        %tmp.144 = "🏷️ NAME: ";
+        symbol [ name %tmp.146 142 45 49 ];
+        %tmp.146 = getv ? :name;
+        %tmp.147 = add %tmp.144 %tmp.146;
+        invoke %tmp.142 %tmp.143(%tmp.147);
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 143 16 ]
+        symbol [ System %tmp.148 143 16 22 ];
+        %tmp.148 = getm $.Toybox.System;
+        symbol [ println %tmp.149 143 23 30 ];
+        %tmp.149 = getv function %tmp.148 :println;
+        %tmp.150 = "💰 PRICE: ";
+        symbol [ price %tmp.152 143 45 50 ];
+        %tmp.152 = getv ? :price;
+        %tmp.153 = add %tmp.150 %tmp.152;
+        invoke %tmp.148 %tmp.149(%tmp.153);
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_129_51_144_12_stop:
+        goto @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_129_19_147_12_if_end;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_129_19_147_12_if_else_false:
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_144_19_147_12_start:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 145 16 ]
+        %tmp.154 = "Неизвестный формат данных";
+        symbol [ error ? 145 16 21 ];
+        putv self :error %tmp.154;
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 146 16 ]
+        symbol [ System %tmp.155 146 16 22 ];
+        %tmp.155 = getm $.Toybox.System;
+        symbol [ println %tmp.156 146 23 30 ];
+        %tmp.156 = getv function %tmp.155 :println;
+        %tmp.157 = "❌ UNKNOWN DATA TYPE";
+        invoke %tmp.155 %tmp.156(%tmp.157);
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_144_19_147_12_stop:
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_129_19_147_12_if_end:
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_108_12_147_12_if_end:
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_105_12_148_8_stop:
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_105_8_151_8_endTry:
+        jsr @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_105_8_151_8_finally;
+        goto @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_105_8_151_8_end;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_105_8_151_8_catch:
+        %tmp.158 = exception;
+        push %tmp.158;
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 148 10 ]
+        [ "_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_105_8_151_8_catch" "_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_148_10_151_8_end" ]
+        %e.2 = local;
+        symbol [ e %e.2 148 17 18 ];
+        %tmp.159 = dup %tmp.158;
+        lputv %e.2 %tmp.159;
+        symbol [ e %e.2 148 17 18 ];
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_148_20_151_8_start:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 149 12 ]
+        %tmp.160 = "Ошибка данных";
+        symbol [ error ? 149 12 17 ];
+        putv self :error %tmp.160;
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 150 12 ]
+        symbol [ System %tmp.161 150 12 18 ];
+        %tmp.161 = getm $.Toybox.System;
+        symbol [ println %tmp.162 150 19 26 ];
+        %tmp.162 = getv function %tmp.161 :println;
+        %tmp.163 = "💥 EXCEPTION IN PROCESS DATA: ";
+        %tmp.164 = lgetv %e.2;
+        symbol [ e %tmp.164 150 61 62 ];
+        symbol [ getErrorMessage %tmp.165 150 63 78 ];
+        %tmp.165 = getv function %tmp.164 :getErrorMessage;
+        %tmp.166 = invoke %tmp.164 %tmp.165();
+        %tmp.167 = add %tmp.163 %tmp.166;
+        invoke %tmp.161 %tmp.162(%tmp.167);
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_148_20_151_8_stop:
+        jsr @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_105_8_151_8_finally;
+        pop;
+        goto @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_105_8_151_8_end;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_148_10_151_8_end:
+        try @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_105_8_151_8_catch @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_148_10_151_8_end @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_148_10_151_8_end @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_105_8_151_8_finally;
+        jsr @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_105_8_151_8_finally;
+        throw %tmp.158;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_105_8_151_8_finally:
+        jsrret;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_105_8_151_8_end:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 152 8 ]
+        symbol [ System %tmp.168 152 8 14 ];
+        %tmp.168 = getm $.Toybox.System;
+        symbol [ println %tmp.169 152 15 22 ];
+        %tmp.169 = getv function %tmp.168 :println;
+        %tmp.170 = "=== END PROCESS DATA ===";
+        invoke %tmp.168 %tmp.169(%tmp.170);
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_103_31_153_4_stop:
+    }
+    [ @file = "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc"; @line = 155; @symbol_functiondef = [getName,155,13,20]; ]
+    function getName() {
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_155_23_157_4_start:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 156 8 ]
+        symbol [ name %tmp.2 156 15 19 ];
+        %tmp.2 = getv ? :name;
+        ret %tmp.2;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_155_23_157_4_stop:
+    }
+    [ @file = "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc"; @line = 159; @symbol_functiondef = [getPrice,159,13,21]; ]
+    function getPrice() {
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_159_24_161_4_start:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 160 8 ]
+        symbol [ price %tmp.2 160 15 20 ];
+        %tmp.2 = getv ? :price;
+        ret %tmp.2;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_159_24_161_4_stop:
+    }
+    [ @file = "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc"; @line = 163; @symbol_functiondef = [getError,163,13,21]; ]
+    function getError() {
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_163_24_165_4_start:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 164 8 ]
+        symbol [ error %tmp.2 164 15 20 ];
+        %tmp.2 = getv ? :error;
+        ret %tmp.2;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_163_24_165_4_stop:
+    }
+    [ @file = "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc"; @line = 167; @symbol_functiondef = [getIsLoading,167,13,25]; ]
+    function getIsLoading() {
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_167_28_169_4_start:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 168 8 ]
+        symbol [ isLoading %tmp.2 168 15 24 ];
+        %tmp.2 = getv ? :isLoading;
+        ret %tmp.2;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_167_28_169_4_stop:
+    }
+}
+[ @file = "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc"; @line = 172; @symbol_classdef = [ProBeautySpaceView,172,6,24]; @symbol_extends<0> = [WatchUi,172,33,40]; @symbol_extends<1> = [View,172,41,45]; ]
+class ProBeautySpaceView extends WatchUi.View {
+    [ @file = "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc"; @line = 172; ]
+    <init> {
+    }
+    [ @file = "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc"; @line = 172; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc"; @line = 173; @symbol_functiondef = [initialize,173,13,23]; ]
+    function initialize() as Void {
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_173_26_176_4_start:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 174 8 ]
+        symbol [ System %tmp.1 174 8 14 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ println %tmp.2 174 15 22 ];
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "=== VIEW INITIALIZE ===";
+        invoke %tmp.1 %tmp.2(%tmp.3);
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 175 8 ]
+        symbol [ View %tmp.5 175 8 12 ];
+        %tmp.5 = getv ? :View;
+        symbol [ initialize %tmp.6 175 13 23 ];
+        %tmp.6 = getv function %tmp.5 :initialize;
+        invoke %tmp.5 %tmp.6();
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_173_26_176_4_stop:
+    }
+    [ @file = "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc"; @line = 178; @symbol_functiondef = [onLayout,178,13,21]; @symbol_param<0> = [dc,178,22,24]; ]
+    function onLayout(dc) {
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_178_26_180_4_start:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 179 8 ]
+        symbol [ System %tmp.1 179 8 14 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ println %tmp.2 179 15 22 ];
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "=== VIEW ON LAYOUT ===";
+        invoke %tmp.1 %tmp.2(%tmp.3);
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_178_26_180_4_stop:
+    }
+    [ @file = "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc"; @line = 182; @symbol_functiondef = [onUpdate,182,13,21]; @symbol_param<0> = [dc,182,22,24]; ]
+    function onUpdate(dc) {
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_182_26_210_4_start:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 183 8 ]
+        symbol [ System %tmp.1 183 8 14 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ println %tmp.2 183 15 22 ];
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "=== VIEW ON UPDATE ===";
+        invoke %tmp.1 %tmp.2(%tmp.3);
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 185 8 ]
+        [ "_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_182_26_210_4_start" "_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_182_26_210_4_stop" ]
+        %app.1 = local;
+        symbol [ app %app.1 185 12 15 ];
+        symbol [ Application %tmp.4 185 18 29 ];
+        %tmp.4 = getm $.Toybox.Application;
+        symbol [ getApp %tmp.5 185 30 36 ];
+        %tmp.5 = getv function %tmp.4 :getApp;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        lputv %app.1 %tmp.6;
+        symbol [ app %app.1 185 12 15 ];
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 186 8 ]
+        symbol [ System %tmp.7 186 8 14 ];
+        %tmp.7 = getm $.Toybox.System;
+        symbol [ println %tmp.8 186 15 22 ];
+        %tmp.8 = getv function %tmp.7 :println;
+        %tmp.9 = "🔄 APP STATE - Loading: ";
+        %tmp.10 = lgetv %app.1;
+        symbol [ app %tmp.10 186 51 54 ];
+        symbol [ getIsLoading %tmp.11 186 55 67 ];
+        %tmp.11 = getv function %tmp.10 :getIsLoading;
+        %tmp.12 = invoke %tmp.10 %tmp.11();
+        %tmp.13 = add %tmp.9 %tmp.12;
+        %tmp.14 = ", Error: ";
+        %tmp.15 = add %tmp.13 %tmp.14;
+        %tmp.16 = lgetv %app.1;
+        symbol [ app %tmp.16 186 86 89 ];
+        symbol [ getError %tmp.17 186 90 98 ];
+        %tmp.17 = getv function %tmp.16 :getError;
+        %tmp.18 = invoke %tmp.16 %tmp.17();
+        %tmp.19 = add %tmp.15 %tmp.18;
+        %tmp.20 = ", Name: ";
+        %tmp.21 = add %tmp.19 %tmp.20;
+        %tmp.22 = lgetv %app.1;
+        symbol [ app %tmp.22 186 116 119 ];
+        symbol [ getName %tmp.23 186 120 127 ];
+        %tmp.23 = getv function %tmp.22 :getName;
+        %tmp.24 = invoke %tmp.22 %tmp.23();
+        %tmp.25 = add %tmp.21 %tmp.24;
+        %tmp.26 = ", Price: ";
+        %tmp.27 = add %tmp.25 %tmp.26;
+        %tmp.28 = lgetv %app.1;
+        symbol [ app %tmp.28 186 146 149 ];
+        symbol [ getPrice %tmp.29 186 150 158 ];
+        %tmp.29 = getv function %tmp.28 :getPrice;
+        %tmp.30 = invoke %tmp.28 %tmp.29();
+        %tmp.31 = add %tmp.27 %tmp.30;
+        invoke %tmp.7 %tmp.8(%tmp.31);
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 188 8 ]
+        %tmp.32 = lgetv %dc;
+        symbol [ dc %tmp.32 188 8 10 ];
+        symbol [ setColor %tmp.33 188 11 19 ];
+        %tmp.33 = getv function %tmp.32 :setColor;
+        symbol [ Graphics %tmp.34 188 20 28 ];
+        %tmp.34 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.35 188 29 40 ];
+        %tmp.35 = getv %tmp.34 :COLOR_BLACK;
+        symbol [ Graphics %tmp.36 188 42 50 ];
+        %tmp.36 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.37 188 51 62 ];
+        %tmp.37 = getv %tmp.36 :COLOR_BLACK;
+        invoke %tmp.32 %tmp.33(%tmp.35, %tmp.37);
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 189 8 ]
+        %tmp.38 = lgetv %dc;
+        symbol [ dc %tmp.38 189 8 10 ];
+        symbol [ clear %tmp.39 189 11 16 ];
+        %tmp.39 = getv function %tmp.38 :clear;
+        invoke %tmp.38 %tmp.39();
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 191 8 ]
+        [ "_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_182_26_210_4_start" "_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_182_26_210_4_stop" ]
+        %width.2 = local;
+        symbol [ width %width.2 191 12 17 ];
+        %tmp.40 = lgetv %dc;
+        symbol [ dc %tmp.40 191 20 22 ];
+        symbol [ getWidth %tmp.41 191 23 31 ];
+        %tmp.41 = getv function %tmp.40 :getWidth;
+        %tmp.42 = invoke %tmp.40 %tmp.41();
+        lputv %width.2 %tmp.42;
+        symbol [ width %width.2 191 12 17 ];
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 192 8 ]
+        [ "_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_182_26_210_4_start" "_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_182_26_210_4_stop" ]
+        %height.3 = local;
+        symbol [ height %height.3 192 12 18 ];
+        %tmp.43 = lgetv %dc;
+        symbol [ dc %tmp.43 192 21 23 ];
+        symbol [ getHeight %tmp.44 192 24 33 ];
+        %tmp.44 = getv function %tmp.43 :getHeight;
+        %tmp.45 = invoke %tmp.43 %tmp.44();
+        lputv %height.3 %tmp.45;
+        symbol [ height %height.3 192 12 18 ];
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 194 8 ]
+        symbol [ System %tmp.46 194 8 14 ];
+        %tmp.46 = getm $.Toybox.System;
+        symbol [ println %tmp.47 194 15 22 ];
+        %tmp.47 = getv function %tmp.46 :println;
+        %tmp.48 = "📏 SCREEN SIZE: ";
+        %tmp.49 = lgetv %width.2;
+        symbol [ width %tmp.49 194 43 48 ];
+        %tmp.50 = add %tmp.48 %tmp.49;
+        %tmp.51 = "x";
+        %tmp.52 = add %tmp.50 %tmp.51;
+        %tmp.53 = lgetv %height.3;
+        symbol [ height %tmp.53 194 57 63 ];
+        %tmp.54 = add %tmp.52 %tmp.53;
+        invoke %tmp.46 %tmp.47(%tmp.54);
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 196 8 ]
+        %tmp.55 = lgetv %dc;
+        symbol [ dc %tmp.55 196 8 10 ];
+        symbol [ setColor %tmp.56 196 11 19 ];
+        %tmp.56 = getv function %tmp.55 :setColor;
+        symbol [ Graphics %tmp.57 196 20 28 ];
+        %tmp.57 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.58 196 29 40 ];
+        %tmp.58 = getv %tmp.57 :COLOR_WHITE;
+        symbol [ Graphics %tmp.59 196 42 50 ];
+        %tmp.59 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.60 196 51 68 ];
+        %tmp.60 = getv %tmp.59 :COLOR_TRANSPARENT;
+        invoke %tmp.55 %tmp.56(%tmp.58, %tmp.60);
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 198 8 ]
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_198_8_207_8_if_stmt:
+        %tmp.61 = lgetv %app.1;
+        symbol [ app %tmp.61 198 12 15 ];
+        symbol [ getIsLoading %tmp.62 198 16 28 ];
+        %tmp.62 = getv function %tmp.61 :getIsLoading;
+        %tmp.63 = invoke %tmp.61 %tmp.62();
+        bf %tmp.63 @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_198_8_207_8_if_false;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_198_8_207_8_if_true:
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_198_32_201_8_start:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 199 12 ]
+        symbol [ System %tmp.64 199 12 18 ];
+        %tmp.64 = getm $.Toybox.System;
+        symbol [ println %tmp.65 199 19 26 ];
+        %tmp.65 = getv function %tmp.64 :println;
+        %tmp.66 = "🔄 SHOWING LOADING...";
+        invoke %tmp.64 %tmp.65(%tmp.66);
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 200 12 ]
+        %tmp.67 = self;
+        symbol [ drawWatchFace %tmp.68 200 12 25 ];
+        %tmp.68 = getv function %tmp.67 :drawWatchFace;
+        %tmp.69 = lgetv %dc;
+        symbol [ dc %tmp.69 200 26 28 ];
+        %tmp.70 = lgetv %width.2;
+        symbol [ width %tmp.70 200 30 35 ];
+        %tmp.71 = lgetv %height.3;
+        symbol [ height %tmp.71 200 37 43 ];
+        %tmp.72 = "Загрузка...";
+        %tmp.73 = "";
+        invoke %tmp.67 %tmp.68(%tmp.69, %tmp.70, %tmp.71, %tmp.72, %tmp.73);
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_198_32_201_8_stop:
+        goto @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_198_8_207_8_if_end;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_198_8_207_8_if_false:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 201 15 ]
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_201_15_207_8_if_stmt:
+        %tmp.74 = lgetv %app.1;
+        symbol [ app %tmp.74 201 19 22 ];
+        symbol [ getError %tmp.75 201 23 31 ];
+        %tmp.75 = getv function %tmp.74 :getError;
+        %tmp.76 = invoke %tmp.74 %tmp.75();
+        %tmp.77 = null;
+        %tmp.78 = ne %tmp.76 %tmp.77;
+        bf %tmp.78 @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_201_15_207_8_if_else_false;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_201_15_207_8_if_true:
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_201_43_204_8_start:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 202 12 ]
+        symbol [ System %tmp.79 202 12 18 ];
+        %tmp.79 = getm $.Toybox.System;
+        symbol [ println %tmp.80 202 19 26 ];
+        %tmp.80 = getv function %tmp.79 :println;
+        %tmp.81 = "❌ SHOWING ERROR: ";
+        %tmp.82 = lgetv %app.1;
+        symbol [ app %tmp.82 202 49 52 ];
+        symbol [ getError %tmp.83 202 53 61 ];
+        %tmp.83 = getv function %tmp.82 :getError;
+        %tmp.84 = invoke %tmp.82 %tmp.83();
+        %tmp.85 = add %tmp.81 %tmp.84;
+        invoke %tmp.79 %tmp.80(%tmp.85);
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 203 12 ]
+        %tmp.86 = self;
+        symbol [ drawWatchFace %tmp.87 203 12 25 ];
+        %tmp.87 = getv function %tmp.86 :drawWatchFace;
+        %tmp.88 = lgetv %dc;
+        symbol [ dc %tmp.88 203 26 28 ];
+        %tmp.89 = lgetv %width.2;
+        symbol [ width %tmp.89 203 30 35 ];
+        %tmp.90 = lgetv %height.3;
+        symbol [ height %tmp.90 203 37 43 ];
+        %tmp.91 = "Ошибка";
+        %tmp.92 = lgetv %app.1;
+        symbol [ app %tmp.92 203 55 58 ];
+        symbol [ getError %tmp.93 203 59 67 ];
+        %tmp.93 = getv function %tmp.92 :getError;
+        %tmp.94 = invoke %tmp.92 %tmp.93();
+        invoke %tmp.86 %tmp.87(%tmp.88, %tmp.89, %tmp.90, %tmp.91, %tmp.94);
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_201_43_204_8_stop:
+        goto @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_201_15_207_8_if_end;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_201_15_207_8_if_else_false:
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_204_15_207_8_start:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 205 12 ]
+        symbol [ System %tmp.95 205 12 18 ];
+        %tmp.95 = getm $.Toybox.System;
+        symbol [ println %tmp.96 205 19 26 ];
+        %tmp.96 = getv function %tmp.95 :println;
+        %tmp.97 = "✅ SHOWING DATA";
+        invoke %tmp.95 %tmp.96(%tmp.97);
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 206 12 ]
+        %tmp.98 = self;
+        symbol [ drawWatchFace %tmp.99 206 12 25 ];
+        %tmp.99 = getv function %tmp.98 :drawWatchFace;
+        %tmp.100 = lgetv %dc;
+        symbol [ dc %tmp.100 206 26 28 ];
+        %tmp.101 = lgetv %width.2;
+        symbol [ width %tmp.101 206 30 35 ];
+        %tmp.102 = lgetv %height.3;
+        symbol [ height %tmp.102 206 37 43 ];
+        %tmp.103 = lgetv %app.1;
+        symbol [ app %tmp.103 206 45 48 ];
+        symbol [ getName %tmp.104 206 49 56 ];
+        %tmp.104 = getv function %tmp.103 :getName;
+        %tmp.105 = invoke %tmp.103 %tmp.104();
+        %tmp.106 = lgetv %app.1;
+        symbol [ app %tmp.106 206 60 63 ];
+        symbol [ getPrice %tmp.107 206 64 72 ];
+        %tmp.107 = getv function %tmp.106 :getPrice;
+        %tmp.108 = invoke %tmp.106 %tmp.107();
+        invoke %tmp.98 %tmp.99(%tmp.100, %tmp.101, %tmp.102, %tmp.105, %tmp.108);
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_204_15_207_8_stop:
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_201_15_207_8_if_end:
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_198_8_207_8_if_end:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 209 8 ]
+        symbol [ System %tmp.109 209 8 14 ];
+        %tmp.109 = getm $.Toybox.System;
+        symbol [ println %tmp.110 209 15 22 ];
+        %tmp.110 = getv function %tmp.109 :println;
+        %tmp.111 = "=== END VIEW UPDATE ===";
+        invoke %tmp.109 %tmp.110(%tmp.111);
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_182_26_210_4_stop:
+    }
+    [ @file = "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc"; @line = 212; @symbol_functiondef = [drawWatchFace,212,13,26]; @symbol_param<0> = [dc,212,27,29]; @symbol_param<1> = [width,212,31,36]; @symbol_param<2> = [height,212,38,44]; @symbol_param<3> = [nameText,212,46,54]; @symbol_param<4> = [priceText,212,56,65]; ]
+    function drawWatchFace(dc, width, height, nameText, priceText) {
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_212_67_253_4_start:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 213 8 ]
+        symbol [ System %tmp.1 213 8 14 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ println %tmp.2 213 15 22 ];
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "🎨 DRAWING WATCH FACE - Name: '";
+        %tmp.4 = lgetv %nameText;
+        symbol [ nameText %tmp.4 213 58 66 ];
+        %tmp.5 = add %tmp.3 %tmp.4;
+        %tmp.6 = "', Price: '";
+        %tmp.7 = add %tmp.5 %tmp.6;
+        %tmp.8 = lgetv %priceText;
+        symbol [ priceText %tmp.8 213 85 94 ];
+        %tmp.9 = add %tmp.7 %tmp.8;
+        %tmp.10 = "'";
+        %tmp.11 = add %tmp.9 %tmp.10;
+        invoke %tmp.1 %tmp.2(%tmp.11);
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 215 8 ]
+        [ "_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_212_67_253_4_start" "_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_212_67_253_4_stop" ]
+        %centerX.1 = local;
+        symbol [ centerX %centerX.1 215 12 19 ];
+        %tmp.12 = lgetv %width;
+        symbol [ width %tmp.12 215 22 27 ];
+        %tmp.13 = 2;
+        %tmp.14 = div %tmp.12 %tmp.13;
+        lputv %centerX.1 %tmp.14;
+        symbol [ centerX %centerX.1 215 12 19 ];
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 218 8 ]
+        [ "_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_212_67_253_4_start" "_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_212_67_253_4_stop" ]
+        %clockTime.2 = local;
+        symbol [ clockTime %clockTime.2 218 12 21 ];
+        symbol [ System %tmp.15 218 24 30 ];
+        %tmp.15 = getm $.Toybox.System;
+        symbol [ getClockTime %tmp.16 218 31 43 ];
+        %tmp.16 = getv function %tmp.15 :getClockTime;
+        %tmp.17 = invoke %tmp.15 %tmp.16();
+        lputv %clockTime.2 %tmp.17;
+        symbol [ clockTime %clockTime.2 218 12 21 ];
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 219 8 ]
+        [ "_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_212_67_253_4_start" "_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_212_67_253_4_stop" ]
+        %timeString.3 = local;
+        symbol [ timeString %timeString.3 219 12 22 ];
+        symbol [ Lang %tmp.18 219 25 29 ];
+        %tmp.18 = getm $.Toybox.Lang;
+        symbol [ format %tmp.19 219 30 36 ];
+        %tmp.19 = getv function %tmp.18 :format;
+        %tmp.20 = "$1$:$2$";
+        %tmp.21 = newa 2;
+        %tmp.22 = lgetv %clockTime.2;
+        symbol [ clockTime %tmp.22 219 49 58 ];
+        symbol [ hour %tmp.23 219 59 63 ];
+        %tmp.23 = getv %tmp.22 :hour;
+        %tmp.24 = dup %tmp.21;
+        %tmp.25 = aputv %tmp.24 0 %tmp.23;
+        %tmp.26 = lgetv %clockTime.2;
+        symbol [ clockTime %tmp.26 219 65 74 ];
+        symbol [ min %tmp.27 219 75 78 ];
+        %tmp.27 = getv %tmp.26 :min;
+        symbol [ format %tmp.28 219 79 85 ];
+        %tmp.28 = getv function %tmp.27 :format;
+        %tmp.29 = "%02d";
+        %tmp.30 = invoke %tmp.27 %tmp.28(%tmp.29);
+        %tmp.31 = dup %tmp.25;
+        %tmp.32 = aputv %tmp.31 1 %tmp.30;
+        %tmp.33 = invoke %tmp.18 %tmp.19(%tmp.20, %tmp.32);
+        lputv %timeString.3 %tmp.33;
+        symbol [ timeString %timeString.3 219 12 22 ];
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 220 8 ]
+        symbol [ System %tmp.34 220 8 14 ];
+        %tmp.34 = getm $.Toybox.System;
+        symbol [ println %tmp.35 220 15 22 ];
+        %tmp.35 = getv function %tmp.34 :println;
+        %tmp.36 = "⏰ TIME: ";
+        %tmp.37 = lgetv %timeString.3;
+        symbol [ timeString %tmp.37 220 36 46 ];
+        %tmp.38 = add %tmp.36 %tmp.37;
+        invoke %tmp.34 %tmp.35(%tmp.38);
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 223 8 ]
+        [ "_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_212_67_253_4_start" "_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_212_67_253_4_stop" ]
+        %nameFont.4 = local;
+        symbol [ nameFont %nameFont.4 223 12 20 ];
+        %tmp.39 = self;
+        symbol [ findFittingFont %tmp.40 223 23 38 ];
+        %tmp.40 = getv function %tmp.39 :findFittingFont;
+        %tmp.41 = lgetv %dc;
+        symbol [ dc %tmp.41 223 39 41 ];
+        %tmp.42 = lgetv %nameText;
+        symbol [ nameText %tmp.42 223 43 51 ];
+        %tmp.43 = lgetv %width;
+        symbol [ width %tmp.43 223 53 58 ];
+        %tmp.44 = 0.9;
+        %tmp.45 = mul %tmp.43 %tmp.44;
+        %tmp.46 = newa 3;
+        symbol [ Graphics %tmp.47 223 67 75 ];
+        %tmp.47 = getm $.Toybox.Graphics;
+        symbol [ FONT_MEDIUM %tmp.48 223 76 87 ];
+        %tmp.48 = getv %tmp.47 :FONT_MEDIUM;
+        %tmp.49 = dup %tmp.46;
+        %tmp.50 = aputv %tmp.49 0 %tmp.48;
+        symbol [ Graphics %tmp.51 223 89 97 ];
+        %tmp.51 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.52 223 98 108 ];
+        %tmp.52 = getv %tmp.51 :FONT_SMALL;
+        %tmp.53 = dup %tmp.50;
+        %tmp.54 = aputv %tmp.53 1 %tmp.52;
+        symbol [ Graphics %tmp.55 223 110 118 ];
+        %tmp.55 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.56 223 119 129 ];
+        %tmp.56 = getv %tmp.55 :FONT_XTINY;
+        %tmp.57 = dup %tmp.54;
+        %tmp.58 = aputv %tmp.57 2 %tmp.56;
+        %tmp.59 = invoke %tmp.39 %tmp.40(%tmp.41, %tmp.42, %tmp.45, %tmp.58);
+        lputv %nameFont.4 %tmp.59;
+        symbol [ nameFont %nameFont.4 223 12 20 ];
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 224 8 ]
+        [ "_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_212_67_253_4_start" "_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_212_67_253_4_stop" ]
+        %nameHeight.5 = local;
+        symbol [ nameHeight %nameHeight.5 224 12 22 ];
+        %tmp.60 = lgetv %dc;
+        symbol [ dc %tmp.60 224 25 27 ];
+        symbol [ getFontHeight %tmp.61 224 28 41 ];
+        %tmp.61 = getv function %tmp.60 :getFontHeight;
+        %tmp.62 = lgetv %nameFont.4;
+        symbol [ nameFont %tmp.62 224 42 50 ];
+        %tmp.63 = invoke %tmp.60 %tmp.61(%tmp.62);
+        lputv %nameHeight.5 %tmp.63;
+        symbol [ nameHeight %nameHeight.5 224 12 22 ];
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 226 8 ]
+        [ "_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_212_67_253_4_start" "_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_212_67_253_4_stop" ]
+        %timeFont.6 = local;
+        symbol [ timeFont %timeFont.6 226 12 20 ];
+        symbol [ Graphics %tmp.64 226 23 31 ];
+        %tmp.64 = getm $.Toybox.Graphics;
+        symbol [ FONT_NUMBER_THAI_HOT %tmp.65 226 32 52 ];
+        %tmp.65 = getv %tmp.64 :FONT_NUMBER_THAI_HOT;
+        lputv %timeFont.6 %tmp.65;
+        symbol [ timeFont %timeFont.6 226 12 20 ];
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 227 8 ]
+        [ "_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_212_67_253_4_start" "_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_212_67_253_4_stop" ]
+        %timeHeight.7 = local;
+        symbol [ timeHeight %timeHeight.7 227 12 22 ];
+        %tmp.66 = lgetv %dc;
+        symbol [ dc %tmp.66 227 25 27 ];
+        symbol [ getFontHeight %tmp.67 227 28 41 ];
+        %tmp.67 = getv function %tmp.66 :getFontHeight;
+        %tmp.68 = lgetv %timeFont.6;
+        symbol [ timeFont %tmp.68 227 42 50 ];
+        %tmp.69 = invoke %tmp.66 %tmp.67(%tmp.68);
+        lputv %timeHeight.7 %tmp.69;
+        symbol [ timeHeight %timeHeight.7 227 12 22 ];
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 229 8 ]
+        [ "_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_212_67_253_4_start" "_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_212_67_253_4_stop" ]
+        %priceFont.8 = local;
+        symbol [ priceFont %priceFont.8 229 12 21 ];
+        %tmp.70 = self;
+        symbol [ findFittingFont %tmp.71 229 24 39 ];
+        %tmp.71 = getv function %tmp.70 :findFittingFont;
+        %tmp.72 = lgetv %dc;
+        symbol [ dc %tmp.72 229 40 42 ];
+        %tmp.73 = lgetv %priceText;
+        symbol [ priceText %tmp.73 229 44 53 ];
+        %tmp.74 = lgetv %width;
+        symbol [ width %tmp.74 229 55 60 ];
+        %tmp.75 = 0.9;
+        %tmp.76 = mul %tmp.74 %tmp.75;
+        %tmp.77 = newa 3;
+        symbol [ Graphics %tmp.78 229 69 77 ];
+        %tmp.78 = getm $.Toybox.Graphics;
+        symbol [ FONT_MEDIUM %tmp.79 229 78 89 ];
+        %tmp.79 = getv %tmp.78 :FONT_MEDIUM;
+        %tmp.80 = dup %tmp.77;
+        %tmp.81 = aputv %tmp.80 0 %tmp.79;
+        symbol [ Graphics %tmp.82 229 91 99 ];
+        %tmp.82 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.83 229 100 110 ];
+        %tmp.83 = getv %tmp.82 :FONT_SMALL;
+        %tmp.84 = dup %tmp.81;
+        %tmp.85 = aputv %tmp.84 1 %tmp.83;
+        symbol [ Graphics %tmp.86 229 112 120 ];
+        %tmp.86 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.87 229 121 131 ];
+        %tmp.87 = getv %tmp.86 :FONT_XTINY;
+        %tmp.88 = dup %tmp.85;
+        %tmp.89 = aputv %tmp.88 2 %tmp.87;
+        %tmp.90 = invoke %tmp.70 %tmp.71(%tmp.72, %tmp.73, %tmp.76, %tmp.89);
+        lputv %priceFont.8 %tmp.90;
+        symbol [ priceFont %priceFont.8 229 12 21 ];
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 230 8 ]
+        [ "_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_212_67_253_4_start" "_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_212_67_253_4_stop" ]
+        %priceHeight.9 = local;
+        symbol [ priceHeight %priceHeight.9 230 12 23 ];
+        %tmp.91 = lgetv %dc;
+        symbol [ dc %tmp.91 230 26 28 ];
+        symbol [ getFontHeight %tmp.92 230 29 42 ];
+        %tmp.92 = getv function %tmp.91 :getFontHeight;
+        %tmp.93 = lgetv %priceFont.8;
+        symbol [ priceFont %tmp.93 230 43 52 ];
+        %tmp.94 = invoke %tmp.91 %tmp.92(%tmp.93);
+        lputv %priceHeight.9 %tmp.94;
+        symbol [ priceHeight %priceHeight.9 230 12 23 ];
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 232 8 ]
+        symbol [ System %tmp.95 232 8 14 ];
+        %tmp.95 = getm $.Toybox.System;
+        symbol [ println %tmp.96 232 15 22 ];
+        %tmp.96 = getv function %tmp.95 :println;
+        %tmp.97 = "📏 FONT HEIGHTS - Name: ";
+        %tmp.98 = lgetv %nameHeight.5;
+        symbol [ nameHeight %tmp.98 232 51 61 ];
+        %tmp.99 = add %tmp.97 %tmp.98;
+        %tmp.100 = ", Time: ";
+        %tmp.101 = add %tmp.99 %tmp.100;
+        %tmp.102 = lgetv %timeHeight.7;
+        symbol [ timeHeight %tmp.102 232 77 87 ];
+        %tmp.103 = add %tmp.101 %tmp.102;
+        %tmp.104 = ", Price: ";
+        %tmp.105 = add %tmp.103 %tmp.104;
+        %tmp.106 = lgetv %priceHeight.9;
+        symbol [ priceHeight %tmp.106 232 104 115 ];
+        %tmp.107 = add %tmp.105 %tmp.106;
+        invoke %tmp.95 %tmp.96(%tmp.107);
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 235 8 ]
+        [ "_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_212_67_253_4_start" "_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_212_67_253_4_stop" ]
+        %nameTopPosition.10 = local;
+        symbol [ nameTopPosition %nameTopPosition.10 235 12 27 ];
+        %tmp.108 = lgetv %height;
+        symbol [ height %tmp.108 235 31 37 ];
+        %tmp.109 = 0.05;
+        %tmp.110 = mul %tmp.108 %tmp.109;
+        symbol [ toNumber %tmp.111 235 46 54 ];
+        %tmp.111 = getv function %tmp.110 :toNumber;
+        %tmp.112 = invoke %tmp.110 %tmp.111();
+        lputv %nameTopPosition.10 %tmp.112;
+        symbol [ nameTopPosition %nameTopPosition.10 235 12 27 ];
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 236 8 ]
+        [ "_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_212_67_253_4_start" "_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_212_67_253_4_stop" ]
+        %nameY.11 = local;
+        symbol [ nameY %nameY.11 236 12 17 ];
+        %tmp.113 = lgetv %nameTopPosition.10;
+        symbol [ nameTopPosition %tmp.113 236 20 35 ];
+        %tmp.114 = lgetv %nameHeight.5;
+        symbol [ nameHeight %tmp.114 236 39 49 ];
+        %tmp.115 = 2;
+        %tmp.116 = div %tmp.114 %tmp.115;
+        %tmp.117 = sub %tmp.113 %tmp.116;
+        lputv %nameY.11 %tmp.117;
+        symbol [ nameY %nameY.11 236 12 17 ];
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 237 8 ]
+        symbol [ System %tmp.118 237 8 14 ];
+        %tmp.118 = getm $.Toybox.System;
+        symbol [ println %tmp.119 237 15 22 ];
+        %tmp.119 = getv function %tmp.118 :println;
+        %tmp.120 = "📛 NAME - 5% position: ";
+        %tmp.121 = lgetv %nameTopPosition.10;
+        symbol [ nameTopPosition %tmp.121 237 50 65 ];
+        %tmp.122 = add %tmp.120 %tmp.121;
+        %tmp.123 = ", Final Y: ";
+        %tmp.124 = add %tmp.122 %tmp.123;
+        %tmp.125 = lgetv %nameY.11;
+        symbol [ nameY %tmp.125 237 84 89 ];
+        %tmp.126 = add %tmp.124 %tmp.125;
+        invoke %tmp.118 %tmp.119(%tmp.126);
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 238 8 ]
+        %tmp.127 = lgetv %dc;
+        symbol [ dc %tmp.127 238 8 10 ];
+        symbol [ drawText %tmp.128 238 11 19 ];
+        %tmp.128 = getv function %tmp.127 :drawText;
+        %tmp.129 = lgetv %centerX.1;
+        symbol [ centerX %tmp.129 238 20 27 ];
+        %tmp.130 = lgetv %nameY.11;
+        symbol [ nameY %tmp.130 238 29 34 ];
+        %tmp.131 = lgetv %nameFont.4;
+        symbol [ nameFont %tmp.131 238 36 44 ];
+        %tmp.132 = lgetv %nameText;
+        symbol [ nameText %tmp.132 238 46 54 ];
+        symbol [ Graphics %tmp.133 238 56 64 ];
+        %tmp.133 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.134 238 65 84 ];
+        %tmp.134 = getv %tmp.133 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.127 %tmp.128(%tmp.129, %tmp.130, %tmp.131, %tmp.132, %tmp.134);
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 241 8 ]
+        [ "_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_212_67_253_4_start" "_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_212_67_253_4_stop" ]
+        %timeTopPosition.12 = local;
+        symbol [ timeTopPosition %timeTopPosition.12 241 12 27 ];
+        %tmp.135 = lgetv %height;
+        symbol [ height %tmp.135 241 31 37 ];
+        %tmp.136 = 0.5;
+        %tmp.137 = mul %tmp.135 %tmp.136;
+        symbol [ toNumber %tmp.138 241 45 53 ];
+        %tmp.138 = getv function %tmp.137 :toNumber;
+        %tmp.139 = invoke %tmp.137 %tmp.138();
+        lputv %timeTopPosition.12 %tmp.139;
+        symbol [ timeTopPosition %timeTopPosition.12 241 12 27 ];
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 242 8 ]
+        [ "_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_212_67_253_4_start" "_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_212_67_253_4_stop" ]
+        %timeY.13 = local;
+        symbol [ timeY %timeY.13 242 12 17 ];
+        %tmp.140 = lgetv %timeTopPosition.12;
+        symbol [ timeTopPosition %tmp.140 242 20 35 ];
+        %tmp.141 = lgetv %timeHeight.7;
+        symbol [ timeHeight %tmp.141 242 39 49 ];
+        %tmp.142 = 2;
+        %tmp.143 = div %tmp.141 %tmp.142;
+        %tmp.144 = sub %tmp.140 %tmp.143;
+        lputv %timeY.13 %tmp.144;
+        symbol [ timeY %timeY.13 242 12 17 ];
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 243 8 ]
+        symbol [ System %tmp.145 243 8 14 ];
+        %tmp.145 = getm $.Toybox.System;
+        symbol [ println %tmp.146 243 15 22 ];
+        %tmp.146 = getv function %tmp.145 :println;
+        %tmp.147 = "⏰ TIME - 50% position: ";
+        %tmp.148 = lgetv %timeTopPosition.12;
+        symbol [ timeTopPosition %tmp.148 243 51 66 ];
+        %tmp.149 = add %tmp.147 %tmp.148;
+        %tmp.150 = ", Final Y: ";
+        %tmp.151 = add %tmp.149 %tmp.150;
+        %tmp.152 = lgetv %timeY.13;
+        symbol [ timeY %tmp.152 243 85 90 ];
+        %tmp.153 = add %tmp.151 %tmp.152;
+        invoke %tmp.145 %tmp.146(%tmp.153);
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 244 8 ]
+        %tmp.154 = lgetv %dc;
+        symbol [ dc %tmp.154 244 8 10 ];
+        symbol [ drawText %tmp.155 244 11 19 ];
+        %tmp.155 = getv function %tmp.154 :drawText;
+        %tmp.156 = lgetv %centerX.1;
+        symbol [ centerX %tmp.156 244 20 27 ];
+        %tmp.157 = lgetv %timeY.13;
+        symbol [ timeY %tmp.157 244 29 34 ];
+        %tmp.158 = lgetv %timeFont.6;
+        symbol [ timeFont %tmp.158 244 36 44 ];
+        %tmp.159 = lgetv %timeString.3;
+        symbol [ timeString %tmp.159 244 46 56 ];
+        symbol [ Graphics %tmp.160 244 58 66 ];
+        %tmp.160 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.161 244 67 86 ];
+        %tmp.161 = getv %tmp.160 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.154 %tmp.155(%tmp.156, %tmp.157, %tmp.158, %tmp.159, %tmp.161);
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 247 8 ]
+        [ "_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_212_67_253_4_start" "_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_212_67_253_4_stop" ]
+        %priceTopPosition.14 = local;
+        symbol [ priceTopPosition %priceTopPosition.14 247 12 28 ];
+        %tmp.162 = lgetv %height;
+        symbol [ height %tmp.162 247 32 38 ];
+        %tmp.163 = 0.95;
+        %tmp.164 = mul %tmp.162 %tmp.163;
+        symbol [ toNumber %tmp.165 247 47 55 ];
+        %tmp.165 = getv function %tmp.164 :toNumber;
+        %tmp.166 = invoke %tmp.164 %tmp.165();
+        lputv %priceTopPosition.14 %tmp.166;
+        symbol [ priceTopPosition %priceTopPosition.14 247 12 28 ];
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 248 8 ]
+        [ "_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_212_67_253_4_start" "_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_212_67_253_4_stop" ]
+        %priceY.15 = local;
+        symbol [ priceY %priceY.15 248 12 18 ];
+        %tmp.167 = lgetv %priceTopPosition.14;
+        symbol [ priceTopPosition %tmp.167 248 21 37 ];
+        %tmp.168 = lgetv %priceHeight.9;
+        symbol [ priceHeight %tmp.168 248 41 52 ];
+        %tmp.169 = 2;
+        %tmp.170 = div %tmp.168 %tmp.169;
+        %tmp.171 = sub %tmp.167 %tmp.170;
+        lputv %priceY.15 %tmp.171;
+        symbol [ priceY %priceY.15 248 12 18 ];
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 249 8 ]
+        symbol [ System %tmp.172 249 8 14 ];
+        %tmp.172 = getm $.Toybox.System;
+        symbol [ println %tmp.173 249 15 22 ];
+        %tmp.173 = getv function %tmp.172 :println;
+        %tmp.174 = "💰 PRICE - 95% position: ";
+        %tmp.175 = lgetv %priceTopPosition.14;
+        symbol [ priceTopPosition %tmp.175 249 52 68 ];
+        %tmp.176 = add %tmp.174 %tmp.175;
+        %tmp.177 = ", Final Y: ";
+        %tmp.178 = add %tmp.176 %tmp.177;
+        %tmp.179 = lgetv %priceY.15;
+        symbol [ priceY %tmp.179 249 87 93 ];
+        %tmp.180 = add %tmp.178 %tmp.179;
+        invoke %tmp.172 %tmp.173(%tmp.180);
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 250 8 ]
+        %tmp.181 = lgetv %dc;
+        symbol [ dc %tmp.181 250 8 10 ];
+        symbol [ drawText %tmp.182 250 11 19 ];
+        %tmp.182 = getv function %tmp.181 :drawText;
+        %tmp.183 = lgetv %centerX.1;
+        symbol [ centerX %tmp.183 250 20 27 ];
+        %tmp.184 = lgetv %priceY.15;
+        symbol [ priceY %tmp.184 250 29 35 ];
+        %tmp.185 = lgetv %priceFont.8;
+        symbol [ priceFont %tmp.185 250 37 46 ];
+        %tmp.186 = lgetv %priceText;
+        symbol [ priceText %tmp.186 250 48 57 ];
+        symbol [ Graphics %tmp.187 250 59 67 ];
+        %tmp.187 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.188 250 68 87 ];
+        %tmp.188 = getv %tmp.187 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.181 %tmp.182(%tmp.183, %tmp.184, %tmp.185, %tmp.186, %tmp.188);
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 252 8 ]
+        symbol [ System %tmp.189 252 8 14 ];
+        %tmp.189 = getm $.Toybox.System;
+        symbol [ println %tmp.190 252 15 22 ];
+        %tmp.190 = getv function %tmp.189 :println;
+        %tmp.191 = "🎨 WATCH FACE DRAWN";
+        invoke %tmp.189 %tmp.190(%tmp.191);
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_212_67_253_4_stop:
+    }
+    [ @file = "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc"; @line = 255; @symbol_functiondef = [findFittingFont,255,13,28]; @symbol_param<0> = [dc,255,29,31]; @symbol_param<1> = [text,255,33,37]; @symbol_param<2> = [maxWidth,255,39,47]; @symbol_param<3> = [fonts,255,49,54]; ]
+    function findFittingFont(dc, text, maxWidth, fonts) {
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_255_56_275_4_start:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 256 8 ]
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_256_8_258_8_if_stmt:
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_256_12_256_45_begin:
+        %tmp.1 = lgetv %text;
+        symbol [ text %tmp.1 256 12 16 ];
+        %tmp.2 = null;
+        %tmp.3 = eq %tmp.1 %tmp.2;
+        bt %tmp.3 @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_256_8_258_8_if_true;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_256_28_256_45_false:
+        %tmp.4 = lgetv %text;
+        symbol [ text %tmp.4 256 28 32 ];
+        %tmp.5 = as %tmp.4 { (!Null) };
+        symbol [ length %tmp.6 256 33 39 ];
+        %tmp.6 = getv function %tmp.5 :length;
+        %tmp.7 = invoke %tmp.5 %tmp.6();
+        %tmp.8 = 0;
+        %tmp.9 = eq %tmp.7 %tmp.8;
+        push %tmp.9;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_256_28_256_45_end:
+        %tmp.10 = phi [%tmp.3 @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_256_12_256_45_begin] [%tmp.9 @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_256_28_256_45_false] [%tmp.10 @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_256_28_256_45_end];
+        bf %tmp.10 @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_256_8_258_8_if_end;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_256_8_258_8_if_true:
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_256_48_258_8_start:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 257 12 ]
+        %tmp.11 = lgetv %fonts;
+        symbol [ fonts %tmp.11 257 19 24 ];
+        %tmp.12 = 0;
+        %tmp.13 = agetv %tmp.11 %tmp.12;
+        ret %tmp.13;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_256_48_258_8_stop:
+        goto @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_256_8_258_8_if_end;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_256_8_258_8_if_end:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 260 8 ]
+        symbol [ System %tmp.14 260 8 14 ];
+        %tmp.14 = getm $.Toybox.System;
+        symbol [ println %tmp.15 260 15 22 ];
+        %tmp.15 = getv function %tmp.14 :println;
+        %tmp.16 = "🔍 FINDING FONT FOR: '";
+        %tmp.17 = lgetv %text;
+        symbol [ text %tmp.17 260 49 53 ];
+        %tmp.18 = add %tmp.16 %tmp.17;
+        %tmp.19 = "' (max width: ";
+        %tmp.20 = add %tmp.18 %tmp.19;
+        %tmp.21 = lgetv %maxWidth;
+        symbol [ maxWidth %tmp.21 260 75 83 ];
+        %tmp.22 = add %tmp.20 %tmp.21;
+        %tmp.23 = ")";
+        %tmp.24 = add %tmp.22 %tmp.23;
+        invoke %tmp.14 %tmp.15(%tmp.24);
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 262 8 ]
+        for @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_262_8_271_8_for_test @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_262_8_271_8_for_incr @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_262_8_271_8_for_end;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_262_8_271_8_for_init:
+        [ "_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_262_8_271_8_for_begin" "_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_262_8_271_8_for_end" ]
+        %i.1 = local;
+        symbol [ i %i.1 262 17 18 ];
+        %tmp.25 = 0;
+        lputv %i.1 %tmp.25;
+        symbol [ i %i.1 262 17 18 ];
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_262_8_271_8_for_test:
+        %tmp.26 = lgetv %i.1;
+        symbol [ i %tmp.26 262 24 25 ];
+        %tmp.27 = lgetv %fonts;
+        symbol [ fonts %tmp.27 262 28 33 ];
+        symbol [ size %tmp.28 262 34 38 ];
+        %tmp.28 = getv function %tmp.27 :size;
+        %tmp.29 = invoke %tmp.27 %tmp.28();
+        %tmp.30 = lt %tmp.26 %tmp.29;
+        bf %tmp.30 @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_262_8_271_8_for_end;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_262_8_271_8_for_begin:
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_262_47_271_8_start:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 263 12 ]
+        [ "_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_262_47_271_8_start" "_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_262_47_271_8_stop" ]
+        %font.2 = local;
+        symbol [ font %font.2 263 16 20 ];
+        %tmp.31 = lgetv %fonts;
+        symbol [ fonts %tmp.31 263 23 28 ];
+        %tmp.32 = lgetv %i.1;
+        symbol [ i %tmp.32 263 29 30 ];
+        %tmp.33 = agetv %tmp.31 %tmp.32;
+        lputv %font.2 %tmp.33;
+        symbol [ font %font.2 263 16 20 ];
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 264 12 ]
+        [ "_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_262_47_271_8_start" "_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_262_47_271_8_stop" ]
+        %textWidth.3 = local;
+        symbol [ textWidth %textWidth.3 264 16 25 ];
+        %tmp.34 = lgetv %dc;
+        symbol [ dc %tmp.34 264 28 30 ];
+        symbol [ getTextWidthInPixels %tmp.35 264 31 51 ];
+        %tmp.35 = getv function %tmp.34 :getTextWidthInPixels;
+        %tmp.36 = lgetv %text;
+        symbol [ text %tmp.36 264 52 56 ];
+        %tmp.37 = lgetv %font.2;
+        symbol [ font %tmp.37 264 58 62 ];
+        %tmp.38 = invoke %tmp.34 %tmp.35(%tmp.36, %tmp.37);
+        lputv %textWidth.3 %tmp.38;
+        symbol [ textWidth %textWidth.3 264 16 25 ];
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 265 12 ]
+        symbol [ System %tmp.39 265 12 18 ];
+        %tmp.39 = getm $.Toybox.System;
+        symbol [ println %tmp.40 265 19 26 ];
+        %tmp.40 = getv function %tmp.39 :println;
+        %tmp.41 = "📏 FONT ";
+        %tmp.42 = lgetv %font.2;
+        symbol [ font %tmp.42 265 39 43 ];
+        %tmp.43 = add %tmp.41 %tmp.42;
+        %tmp.44 = " WIDTH: ";
+        %tmp.45 = add %tmp.43 %tmp.44;
+        %tmp.46 = lgetv %textWidth.3;
+        symbol [ textWidth %tmp.46 265 59 68 ];
+        %tmp.47 = add %tmp.45 %tmp.46;
+        invoke %tmp.39 %tmp.40(%tmp.47);
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 267 12 ]
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_267_12_270_12_if_stmt:
+        %tmp.48 = lgetv %textWidth.3;
+        symbol [ textWidth %tmp.48 267 16 25 ];
+        %tmp.49 = lgetv %maxWidth;
+        symbol [ maxWidth %tmp.49 267 29 37 ];
+        %tmp.50 = lte %tmp.48 %tmp.49;
+        bf %tmp.50 @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_267_12_270_12_if_end;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_267_12_270_12_if_true:
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_267_39_270_12_start:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 268 16 ]
+        symbol [ System %tmp.51 268 16 22 ];
+        %tmp.51 = getm $.Toybox.System;
+        symbol [ println %tmp.52 268 23 30 ];
+        %tmp.52 = getv function %tmp.51 :println;
+        %tmp.53 = "✅ FOUND FITTING FONT: ";
+        %tmp.54 = lgetv %font.2;
+        symbol [ font %tmp.54 268 58 62 ];
+        %tmp.55 = add %tmp.53 %tmp.54;
+        invoke %tmp.51 %tmp.52(%tmp.55);
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 269 16 ]
+        %tmp.56 = lgetv %font.2;
+        symbol [ font %tmp.56 269 23 27 ];
+        ret %tmp.56;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_267_39_270_12_stop:
+        goto @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_267_12_270_12_if_end;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_267_12_270_12_if_end:
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_262_47_271_8_stop:
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_262_8_271_8_for_incr:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 262 ]
+        %tmp.59 = lgetv %i.1;
+        symbol [ i %tmp.59 262 42 43 ];
+        %tmp.60 = add %tmp.59 1;
+        lputv %i.1 %tmp.60;
+        symbol [ i %i.1 262 42 43 ];
+        goto @_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_262_8_271_8_for_test;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_262_8_271_8_for_end:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 273 8 ]
+        symbol [ System %tmp.61 273 8 14 ];
+        %tmp.61 = getm $.Toybox.System;
+        symbol [ println %tmp.62 273 15 22 ];
+        %tmp.62 = getv function %tmp.61 :println;
+        %tmp.63 = "⚠️ NO FITTING FONT, USING SMALLEST: ";
+        %tmp.64 = lgetv %fonts;
+        symbol [ fonts %tmp.64 273 64 69 ];
+        %tmp.65 = lgetv %fonts;
+        symbol [ fonts %tmp.65 273 70 75 ];
+        symbol [ size %tmp.66 273 76 80 ];
+        %tmp.66 = getv function %tmp.65 :size;
+        %tmp.67 = invoke %tmp.65 %tmp.66();
+        %tmp.68 = 1;
+        %tmp.69 = sub %tmp.67 %tmp.68;
+        %tmp.70 = agetv %tmp.64 %tmp.69;
+        %tmp.71 = add %tmp.63 %tmp.70;
+        invoke %tmp.61 %tmp.62(%tmp.71);
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 274 8 ]
+        %tmp.72 = lgetv %fonts;
+        symbol [ fonts %tmp.72 274 15 20 ];
+        %tmp.73 = lgetv %fonts;
+        symbol [ fonts %tmp.73 274 21 26 ];
+        symbol [ size %tmp.74 274 27 31 ];
+        %tmp.74 = getv function %tmp.73 :size;
+        %tmp.75 = invoke %tmp.73 %tmp.74();
+        %tmp.76 = 1;
+        %tmp.77 = sub %tmp.75 %tmp.76;
+        %tmp.78 = agetv %tmp.72 %tmp.77;
+        ret %tmp.78;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_255_56_275_4_stop:
+    }
+}
+[ @file = "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc"; @line = 278; @symbol_classdef = [ProBeautySpaceDelegate,278,6,28]; @symbol_extends<0> = [WatchUi,278,37,44]; @symbol_extends<1> = [BehaviorDelegate,278,45,61]; ]
+class ProBeautySpaceDelegate extends WatchUi.BehaviorDelegate {
+    [ @file = "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc"; @line = 278; ]
+    <init> {
+    }
+    [ @file = "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc"; @line = 278; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc"; @line = 279; @symbol_functiondef = [initialize,279,13,23]; ]
+    function initialize() as Void {
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_279_26_282_4_start:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 280 8 ]
+        symbol [ System %tmp.1 280 8 14 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ println %tmp.2 280 15 22 ];
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "=== DELEGATE INITIALIZE ===";
+        invoke %tmp.1 %tmp.2(%tmp.3);
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 281 8 ]
+        symbol [ BehaviorDelegate %tmp.5 281 8 24 ];
+        %tmp.5 = getv ? :BehaviorDelegate;
+        symbol [ initialize %tmp.6 281 25 35 ];
+        %tmp.6 = getv function %tmp.5 :initialize;
+        invoke %tmp.5 %tmp.6();
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_279_26_282_4_stop:
+    }
+    [ @file = "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc"; @line = 284; @symbol_functiondef = [onSelect,284,13,21]; ]
+    function onSelect() {
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_284_24_289_4_start:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 285 8 ]
+        symbol [ System %tmp.1 285 8 14 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ println %tmp.2 285 15 22 ];
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "🎯 SELECT BUTTON PRESSED";
+        invoke %tmp.1 %tmp.2(%tmp.3);
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 286 8 ]
+        [ "_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_284_24_289_4_start" "_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_284_24_289_4_stop" ]
+        %app.1 = local;
+        symbol [ app %app.1 286 12 15 ];
+        symbol [ Application %tmp.4 286 18 29 ];
+        %tmp.4 = getm $.Toybox.Application;
+        symbol [ getApp %tmp.5 286 30 36 ];
+        %tmp.5 = getv function %tmp.4 :getApp;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        lputv %app.1 %tmp.6;
+        symbol [ app %app.1 286 12 15 ];
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 287 8 ]
+        %tmp.7 = lgetv %app.1;
+        symbol [ app %tmp.7 287 8 11 ];
+        symbol [ makeRequest %tmp.8 287 12 23 ];
+        %tmp.8 = getv function %tmp.7 :makeRequest;
+        invoke %tmp.7 %tmp.8();
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 288 8 ]
+        %tmp.9 = true;
+        ret %tmp.9;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_284_24_289_4_stop:
+    }
+    [ @file = "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc"; @line = 291; @symbol_functiondef = [onBack,291,13,19]; ]
+    function onBack() {
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_291_22_295_4_start:
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 292 8 ]
+        symbol [ System %tmp.1 292 8 14 ];
+        %tmp.1 = getm $.Toybox.System;
+        symbol [ println %tmp.2 292 15 22 ];
+        %tmp.2 = getv function %tmp.1 :println;
+        %tmp.3 = "🎯 BACK BUTTON PRESSED";
+        invoke %tmp.1 %tmp.2(%tmp.3);
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 293 8 ]
+        symbol [ WatchUi %tmp.4 293 8 15 ];
+        %tmp.4 = getm $.Toybox.WatchUi;
+        symbol [ popView %tmp.5 293 16 23 ];
+        %tmp.5 = getv function %tmp.4 :popView;
+        symbol [ WatchUi %tmp.6 293 24 31 ];
+        %tmp.6 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_IMMEDIATE %tmp.7 293 32 47 ];
+        %tmp.7 = getv %tmp.6 :SLIDE_IMMEDIATE;
+        invoke %tmp.4 %tmp.5(%tmp.7);
+[ "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc" 294 8 ]
+        %tmp.8 = true;
+        ret %tmp.8;
+_Users_optacasa_Projects_git_ProBeautySpace_source_App_mc_291_22_295_4_stop:
+    }
+}
+[ @file = "/Users/optacasa/Projects/git/ProBeautySpace/source/App.mc"; @line = 1; ]
+<init> {
+}

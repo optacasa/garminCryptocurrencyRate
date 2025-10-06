@@ -1,0 +1,6 @@
+project.manifest = manifest.xml
+base.sourcePath = source
+base.resourcePath = resources
+products = fr965
+project.typecheck = 0
+output = bin/ProBeautySpace.iq
